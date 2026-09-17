@@ -27,12 +27,14 @@ Il sistema monitora i seguenti insegnamenti:
 - 🤖 **100% Autonomo su GitHub**: Gira ogni giorno su GitHub Actions, senza bisogno di server o computer accesi.
 - ⏰ **Notifica alle 8:00 (Ora Italiana)**: Gestisce automaticamente il cambio tra Ora Solare (CET) e Ora Legale (CEST).
 - 🚨 **Rilevamento Modifiche**: Se un docente sposta un'aula, anticipa un orario o annulla una lezione, il sistema lo segnala in cima alla notifica evidenziando la variazione (`Da Aula X ➡️ A Aula Y`).
+- 📬 **Notifiche via GitHub Issues**: Crea automaticamente un'**Issue** nel repository con la tabella Markdown formattata delle lezioni di oggi, della settimana ed eventuali variazioni (funzionamento analogo a `bot-bandi-fisica`). Zero configurazioni richieste!
+- 📊 **GitHub Actions Step Summary**: Mostra la tabella formattata direttamente nella schermata dell'esecuzione del workflow.
 - 📥 **Tabelle Scaricabili Subito**:
   - `orario_lezioni.csv`: tabella esportata in formato foglio di calcolo (Excel, Numbers, Google Sheets).
   - `orario_lezioni.ics`: file calendario standard importabile su Google Calendar, Apple Calendar o Outlook con un tap.
   - `orario_lezioni.html`: pagina web visuale e stampabile con tabella orari.
   - `orario_oggi.md` e `orario_settimana.md`: riassunti rapidi in formato Markdown.
-- 📲 **Download Diretto da Notifica**: Su Telegram il bot invia direttamente il messaggio e allega i file `.csv` e `.ics` in chat!
+- 📲 **Notifiche Telegram (Opzionali)**: Invio opzionale su Telegram con i file `.csv` e `.ics` allegati in chat.
 
 ---
 

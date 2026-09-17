@@ -541,6 +541,141 @@ def build_notification_text(today_lessons: list, week_lessons: list, changes: li
     parts.append("📎 <i>In allegato la tabella aggiornata in formato CSV (apribile in Excel) e il file calendario .ICS.</i>")
     return "\n".join(parts)
 
+def build_issue_markdown(today_lessons, week_lessons, changes, is_first_run, now_dt):
+    """Costruisce il titolo e il corpo formattato in Markdown per la Issue di GitHub."""
+    date_str = now_dt.strftime("%d/%m/%Y")
+    day_name = GIORNI_SETTIMANA[now_dt.weekday()]
+    
+    if changes:
+        title = f"🚨 Variazione Orario/Aula — Fisica Triennale ({date_str})"
+    elif today_lessons:
+        title = f"📚 Orario Lezioni — {day_name} {date_str}"
+    else:
+        title = f"🗓️ Orario Lezioni — Settimana del {date_str}"
+        
+    lines = []
+    lines.append(f"# 🎓 Orario Lezioni Fisica (UniBo) — {day_name} {date_str}\n")
+    
+    # 1. VARIAZIONI DI AULA O ORARIO
+    if is_first_run:
+        lines.append("> [!NOTE]")
+        lines.append("> **Inizializzazione completata**: Il calendario è stato registrato. Da domani qualsiasi spostamento di aula o modifica di orario verrà evidenziato qui con massima priorità.\n")
+    elif changes:
+        lines.append("> [!WARNING]")
+        lines.append(f"> ### 🚨 Rilevate {len(changes)} variazioni rispetto al calendario precedente!\n")
+        for ch in changes:
+            if ch["tipo"] == "CAMBIO_AULA":
+                lines.append(f"- 🏛️ **CAMBIO AULA** — **{ch['corso']}** ({ch['data']}, {ch['giorno']} {ch['orario']}):")
+                lines.append(f"  - Vecchia aula: ~~{ch['vecchio']}~~")
+                lines.append(f"  - **Nuova aula**: **{ch['nuovo']}**")
+            elif ch["tipo"] == "CAMBIO_ORARIO":
+                lines.append(f"- ⏰ **CAMBIO ORARIO** — **{ch['corso']}** ({ch['data']}, {ch['giorno']}):")
+                lines.append(f"  - Vecchio orario: ~~{ch['vecchio']}~~")
+                lines.append(f"  - **Nuovo orario**: **{ch['nuovo']}** (Aula: {ch.get('aula', '-')})")
+            elif ch["tipo"] == "CANCELLAZIONE":
+                lines.append(f"- ❌ **ANNULLAMENTO**: {ch['dettagli']}")
+            elif ch["tipo"] == "NUOVA_LEZIONE":
+                lines.append(f"- 🆕 **NUOVA LEZIONE**: {ch['dettagli']}")
+            elif ch["tipo"] == "NUOVA_NOTA":
+                lines.append(f"- 📝 **AVVISO**: {ch['dettagli']}")
+        lines.append("")
+    else:
+        lines.append("> [!TIP]")
+        lines.append("> ✅ **Nessuna variazione**: Tutte le aule e gli orari sono confermati rispetto all'ultimo controllo.\n")
+        
+    # 2. LEZIONI DI OGGI
+    lines.append(f"## 📅 Lezioni di Oggi ({day_name} {date_str})\n")
+    if not today_lessons:
+        lines.append("🏖️ *Nessuna lezione in programma per oggi.*\n")
+    else:
+        lines.append("| Orario | Insegnamento | Canale | Aula | Docente | Note |")
+        lines.append("| :--- | :--- | :---: | :--- | :--- | :--- |")
+        for l in today_lessons:
+            chan = l['canale'] if l['canale'] != "TUTTI" else "Tutti"
+            aula_info = l['aula']
+            if l.get('indirizzo'):
+                aula_info += f"<br><small>📍 {l['indirizzo']}</small>"
+            note_info = l.get('note', '') or '-'
+            lines.append(f"| **{l['orario']}** | **{l['corso']}** | `{chan}` | {aula_info} | {l['docente']} | {note_info} |")
+        lines.append("")
+        
+    # 3. PROSSIME LEZIONI DELLA SETTIMANA
+    lines.append("## 🗓️ Prossime Lezioni nei Prossimi 7 Giorni\n")
+    if not week_lessons:
+        lines.append("*Nessuna lezione in programma nei prossimi 7 giorni.*\n")
+    else:
+        lines.append("| Data | Giorno | Orario | Insegnamento | Canale | Aula |")
+        lines.append("| :--- | :--- | :--- | :--- | :---: | :--- |")
+        for l in week_lessons[:15]:
+            chan = l['canale'] if l['canale'] != "TUTTI" else "Tutti"
+            d_fmt = f"{l['data'][8:10]}/{l['data'][5:7]}"
+            lines.append(f"| {d_fmt} | {l['giorno']} | {l['orario']} | {l['corso']} | `{chan}` | {l['aula']} |")
+        if len(week_lessons) > 15:
+            lines.append(f"| ... | ... | ... | *Altre {len(week_lessons)-15} lezioni nel file CSV* | | |")
+        lines.append("")
+        
+    # 4. DOWNLOAD E TABELLE
+    lines.append("---")
+    lines.append("### 📥 Tabelle e Calendari Scaricabili")
+    lines.append("- 📊 Tabella completa in CSV (Excel): [`orario_lezioni.csv`](./orario_lezioni.csv)")
+    lines.append("- 📅 Calendario iCal per smartphone e Google Calendar: [`orario_lezioni.ics`](./orario_lezioni.ics)")
+    lines.append("- 🌐 Pagina web interattiva: [`orario_lezioni.html`](./orario_lezioni.html)")
+    lines.append("\n*Notifica generata automaticamente dal Tracciatore Orari Lezioni UniBo.*")
+    
+    return title, "\n".join(lines)
+
+def invia_issue_github(titolo, corpo, labels=None):
+    """Crea una Issue nel repository GitHub usando GITHUB_TOKEN e GITHUB_REPOSITORY."""
+    token = os.environ.get("GITHUB_TOKEN")
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    if not token or not repo:
+        print("[INFO] GITHUB_TOKEN o GITHUB_REPOSITORY non presenti (salto creazione Issue GitHub).")
+        return False
+
+    if labels is None:
+        labels = ["orario-lezioni"]
+
+    url = f"https://api.github.com/repos/{repo}/issues"
+    headers = {
+        "Authorization": f"token {token}",
+        "Accept": "application/vnd.github.v3+json",
+        "User-Agent": "OrarioFisicaBot",
+        "Content-Type": "application/json"
+    }
+    payload = {
+        "title": titolo,
+        "body": corpo,
+        "labels": labels
+    }
+    data_bytes = json.dumps(payload).encode("utf-8")
+    
+    try:
+        req = urllib.request.Request(url, data=data_bytes, headers=headers, method="POST")
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            if resp.status in (200, 201):
+                res_data = json.loads(resp.read().decode("utf-8"))
+                print(f"[SUCCESS] Issue GitHub creata con successo: #{res_data.get('number')} - {titolo}")
+                return True
+    except urllib.error.HTTPError as e:
+        if e.code == 422:
+            # Se fallisce per etichetta non esistente, ritenta senza labels
+            payload.pop("labels", None)
+            data_bytes = json.dumps(payload).encode("utf-8")
+            try:
+                req = urllib.request.Request(url, data=data_bytes, headers=headers, method="POST")
+                with urllib.request.urlopen(req, timeout=15) as resp:
+                    if resp.status in (200, 201):
+                        res_data = json.loads(resp.read().decode("utf-8"))
+                        print(f"[SUCCESS] Issue GitHub creata con successo (senza label): #{res_data.get('number')} - {titolo}")
+                        return True
+            except Exception as e2:
+                print(f"[ERRORE] Errore creazione Issue GitHub: {e2}")
+        else:
+            print(f"[ERRORE] Errore HTTP creazione Issue GitHub ({e.code}): {e.reason}")
+    except Exception as e:
+        print(f"[ERRORE] Errore connessione Issue GitHub: {e}")
+    return False
+
 def main():
     cfg = load_config()
     os.makedirs(DATA_DIR, exist_ok=True)
@@ -638,8 +773,25 @@ def main():
     print(f"  - Markdown sett.: {OUTPUT_MD_SETTIMANA}")
     
     notification_html = build_notification_text(today_lessons, week_lessons, changes, is_first_run, now_rome)
+    issue_title, issue_body = build_issue_markdown(today_lessons, week_lessons, changes, is_first_run, now_rome)
     
+    # Scrittura riepilogo in GitHub Step Summary (se eseguito in GitHub Actions)
+    github_step_summary = os.getenv("GITHUB_STEP_SUMMARY")
+    if github_step_summary:
+        try:
+            with open(github_step_summary, "a", encoding="utf-8") as f:
+                f.write(f"\n{issue_body}\n")
+            print("[INFO] Riepilogo scritto con successo su GITHUB_STEP_SUMMARY")
+        except Exception as e:
+            print(f"[WARN] Impossibile scrivere su GITHUB_STEP_SUMMARY: {e}")
+
     if allow_notification:
+        # 1. Notifica via GitHub Issue
+        if os.getenv("CREATE_GITHUB_ISSUE", "true").lower() in ("true", "1", "yes"):
+            print("[INFO] Creazione notifica via GitHub Issue...")
+            invia_issue_github(issue_title, issue_body)
+
+        # 2. Notifica via Telegram
         tg_token = os.getenv("TELEGRAM_BOT_TOKEN")
         tg_chat_id = os.getenv("TELEGRAM_CHAT_ID")
         ntfy_topic = os.getenv("NTFY_TOPIC")

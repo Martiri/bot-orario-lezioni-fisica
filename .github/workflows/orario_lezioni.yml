@@ -28,6 +28,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   track-and-notify:
@@ -46,6 +47,9 @@ jobs:
 
       - name: Esecuzione Tracciamento e Rilevamento Modifiche
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          CREATE_GITHUB_ISSUE: "true"
           CHECK_HOUR_8: ${{ github.event_name == 'schedule' && '1' || '0' }}
           FORCE_NOTIFY: ${{ github.event.inputs.force_notify || (github.event_name != 'schedule' && '1' || '0') }}
           CANALE: ${{ github.event.inputs.canale || secrets.CANALE || vars.CANALE || '' }}
