@@ -625,7 +625,7 @@ def build_issue_markdown(today_lessons, week_lessons, changes, is_first_run, now
     return title, "\n".join(lines)
 
 def invia_issue_github(titolo, corpo, labels=None):
-    """Crea una Issue nel repository GitHub usando GITHUB_TOKEN e GITHUB_REPOSITORY."""
+    """Crea o aggiorna la Issue nel repository GitHub usando GITHUB_TOKEN e GITHUB_REPOSITORY."""
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     if not token or not repo:
@@ -635,13 +635,62 @@ def invia_issue_github(titolo, corpo, labels=None):
     if labels is None:
         labels = ["orario-lezioni"]
 
-    url = f"https://api.github.com/repos/{repo}/issues"
     headers = {
         "Authorization": f"token {token}",
         "Accept": "application/vnd.github.v3+json",
         "User-Agent": "OrarioFisicaBot",
         "Content-Type": "application/json"
     }
+
+    oggi_str = datetime.now(ROME_TZ).strftime("%d/%m/%Y")
+    existing_issue_number = None
+
+    # 1. Controlla le issue aperte: chiudi quelle dei giorni precedenti e trova se ne esiste già una per oggi
+    try:
+        list_url = f"https://api.github.com/repos/{repo}/issues?labels=orario-lezioni&state=open&per_page=10"
+        req = urllib.request.Request(list_url, headers=headers, method="GET")
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            if resp.status == 200:
+                issues = json.loads(resp.read().decode("utf-8"))
+                for iss in issues:
+                    if oggi_str in iss["title"]:
+                        existing_issue_number = iss["number"]
+                    else:
+                        # Chiudi la issue del giorno precedente per mantenere pulito il repository
+                        close_url = f"https://api.github.com/repos/{repo}/issues/{iss['number']}"
+                        close_req = urllib.request.Request(
+                            close_url,
+                            data=json.dumps({"state": "closed"}).encode("utf-8"),
+                            headers=headers,
+                            method="PATCH"
+                        )
+                        try:
+                            with urllib.request.urlopen(close_req, timeout=10) as cresp:
+                                if cresp.status == 200:
+                                    print(f"[INFO] Chiusa precedente issue archiviata #{iss['number']}")
+                        except Exception:
+                            pass
+    except Exception as e:
+        print(f"[WARN] Impossibile verificare issue esistenti: {e}")
+
+    # 2. Se esiste già una issue per oggi, aggiornala
+    if existing_issue_number:
+        patch_url = f"https://api.github.com/repos/{repo}/issues/{existing_issue_number}"
+        payload = {
+            "title": titolo,
+            "body": corpo
+        }
+        try:
+            req = urllib.request.Request(patch_url, data=json.dumps(payload).encode("utf-8"), headers=headers, method="PATCH")
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                if resp.status == 200:
+                    print(f"[SUCCESS] Issue #{existing_issue_number} aggiornata con successo per oggi ({oggi_str}).")
+                    return True
+        except Exception as e:
+            print(f"[WARN] Errore aggiornamento Issue #{existing_issue_number}: {e}")
+
+    # 3. Altrimenti crea una nuova Issue
+    create_url = f"https://api.github.com/repos/{repo}/issues"
     payload = {
         "title": titolo,
         "body": corpo,
@@ -650,7 +699,7 @@ def invia_issue_github(titolo, corpo, labels=None):
     data_bytes = json.dumps(payload).encode("utf-8")
     
     try:
-        req = urllib.request.Request(url, data=data_bytes, headers=headers, method="POST")
+        req = urllib.request.Request(create_url, data=data_bytes, headers=headers, method="POST")
         with urllib.request.urlopen(req, timeout=15) as resp:
             if resp.status in (200, 201):
                 res_data = json.loads(resp.read().decode("utf-8"))
@@ -662,7 +711,7 @@ def invia_issue_github(titolo, corpo, labels=None):
             payload.pop("labels", None)
             data_bytes = json.dumps(payload).encode("utf-8")
             try:
-                req = urllib.request.Request(url, data=data_bytes, headers=headers, method="POST")
+                req = urllib.request.Request(create_url, data=data_bytes, headers=headers, method="POST")
                 with urllib.request.urlopen(req, timeout=15) as resp:
                     if resp.status in (200, 201):
                         res_data = json.loads(resp.read().decode("utf-8"))
@@ -687,17 +736,8 @@ def main():
     print(f"[INFO] Data e ora attuale a Roma: {today_str} {now_rome.strftime('%H:%M:%S')}")
     print(f"[INFO] Canale impostato: {cfg.get('canale', 'ALL')}")
     
-    # Controllo orario per esecuzione pianificata delle 8:00 (se abilitato il flag CHECK_HOUR_8)
-    check_hour = os.getenv("CHECK_HOUR_8", "0") == "1"
-    force_notify = os.getenv("FORCE_NOTIFY", "0") == "1"
-    if check_hour and not force_notify:
-        if now_rome.hour != 8:
-            print(f"[INFO] L'ora attuale a Roma ({now_rome.hour}:00) non è la finestra delle 8:00. Aggiorno i file ma non invio la notifica.")
-            allow_notification = False
-        else:
-            allow_notification = True
-    else:
-        allow_notification = True
+    # Esecuzione e notifica sempre attive ad ogni ciclo (comportamento identico a bot-bandi-unibo)
+    allow_notification = True
 
     # Finestra di interrogazione: ultimi 7 giorni fino a +120 giorni (copre l'intero semestre)
     start_date = (now_rome.date() - timedelta(days=7)).strftime("%Y-%m-%d")

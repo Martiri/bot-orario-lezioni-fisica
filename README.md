@@ -38,46 +38,37 @@ Il sistema monitora i seguenti insegnamenti:
 
 ---
 
-## 🚀 Guida all'Attivazione in 3 Passaggi
+## 🚀 Funzionamento 100% Autonomo (Zero Configurazione)
 
-### 1. Crea il Bot Telegram per ricevere le notifiche (2 minuti)
+Il bot è **immediatamente operativo** e configurato per funzionare in totale autonomia, esattamente come `bot-bandi-unibo`:
 
-1. Apri Telegram e cerca **`@BotFather`**.
-2. Invia il comando `/newbot`, scegli un nome (es. `OrarioFisicaBot`) e uno username (es. `orario_fisica_franco_bot`).
-3. BotFather ti fornirà un **HTTP API Token** (es. `123456789:ABCdefGhIJKlmNoPQRstuVWXyz`).
-4. Avvia una chat con il tuo nuovo bot cliccando su **Avvia** (`/start`).
-5. Per conoscere il tuo ID utente, cerca il bot **`@userinfobot`** su Telegram e premi `/start`: ti risponderà con il tuo `Id` numerico (es. `987654321`).
-
----
-
-### 2. Configura i Secret su GitHub
-
-Nel tuo repository GitHub:
-1. Vai su **Settings** > **Secrets and variables** > **Actions**.
-2. Clicca su **New repository secret** e aggiungi:
-   - `TELEGRAM_BOT_TOKEN`: incolla il token fornito da BotFather.
-   - `TELEGRAM_CHAT_ID`: incolla il tuo ID numerico.
-   - *(Opzionale)* `CANALE`: è già preimpostato su `M-Z` come richiesto. Se non impostato nei Secret, userà automaticamente il canale `M-Z` definito in `config.json`.
+- **Nessun Secret da configurare**: Utilizza i permessi automatici `GITHUB_TOKEN` per aprire e aggiornare le Issue.
+- **Nessun bot Telegram obbligatorio**: Ricevi gli aggiornamenti e gli avvisi direttamente nella scheda **Issues** del repository e via email da GitHub.
+- **Aggiornamento quotidiano**: Il workflow si avvia ogni mattina in automatico su GitHub Actions:
+  1. Scarica gli orari aggiornati dal portale di Ateneo per il Canale **M-Z** (corso `9244`).
+  2. Rileva se ci sono stati cambi di aula, anticipi o cancellazioni rispetto al giorno precedente.
+  3. Crea o aggiorna l'**Issue del giorno** con la tabella orari e l'evidenziazione delle variazioni.
+  4. Salva e committa lo storico aggiornato nel repository.
 
 ---
 
-### 3. Abilita i permessi di scrittura per GitHub Actions
+## 🧪 Esecuzione Manuale (Opzionale)
 
-Per permettere a GitHub Actions di salvare lo storico dei cambiamenti e le tabelle nel repository:
-1. Nel repository GitHub, vai su **Settings** > **Actions** > **General**.
-2. Scorri fino alla sezione **Workflow permissions**.
-3. Seleziona **Read and write permissions**.
-4. Clicca su **Save**.
+Non devi fare nulla perché gira da solo ogni mattina. Se tuttavia vuoi forzare un controllo immediato a qualsiasi ora:
+1. Vai nella scheda **Actions** del repository: [Actions](https://github.com/Martiri/bot-orario-lezioni-fisica/actions).
+2. Seleziona **Tracciamento Orario Lezioni Fisica UniBo**.
+3. Clicca su **Run workflow** > pulsante verde.
+4. In meno di 30 secondi la Issue del giorno sarà creata/aggiornata!
 
 ---
 
-## 🧪 Esecuzione Manuale di Test
+## 📲 Notifiche Telegram (Facoltative)
 
-Puoi testare il tracciamento in qualsiasi momento:
-1. Vai nella scheda **Actions** del repository GitHub.
-2. Seleziona il workflow **Tracciamento Orario Lezioni Fisica UniBo**.
-3. Clicca su **Run workflow**, seleziona il canale desiderato e premi il pulsante verde.
-4. Riceverai la notifica e i file scaricabili direttamente sul tuo Telegram in pochi secondi!
+Se oltre alle GitHub Issues desideri ricevere le notifiche anche su uno smartphone via Telegram:
+1. Crea un bot con `@BotFather` e ottieni il Token.
+2. Ricava il tuo ID con `@userinfobot`.
+3. Aggiungi i secret `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID` in **Settings** > **Secrets and variables** > **Actions**.
+*(Se non li configuri, il bot funziona comunque regolarmente tramite GitHub Issues).*
 
 ---
 
