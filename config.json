@@ -1,0 +1,20 @@
+{
+  "corso_nome": "Laurea in Fisica - Università di Bologna",
+  "corso_codice": "9244",
+  "immatricolazione_codice": "92444",
+  "anno_di_corso": 3,
+  "curricula": "000-000",
+  "canale": "ALL",
+  "api_url": "https://corsi.unibo.it/laurea/fisica/orario-lezioni/@@orario_reale_json",
+  "target_courses": [
+    "Meccanica quantistica",
+    "Fisica nucleare e subnucleare",
+    "Fisica della materia",
+    "Laboratorio di elettronica",
+    "Attività formativa e di orientamento",
+    "Astrofisica",
+    "Introduzione alla fisica dei sistemi complessi",
+    "Elementi di teoria della relatività generale",
+    "Topics in mathematical methods and models in theoretical physics"
+  ]
+}

@@ -1,0 +1,80 @@
+name: Tracciamento Orario Lezioni Fisica UniBo
+
+on:
+  schedule:
+    # Esecuzione automatica dal lunedì al venerdì alle 8:00 del mattino (orario italiano).
+    # In Italia:
+    # - Ora Legale (CEST, UTC+2): le 08:00 italiane corrispondono alle 06:00 UTC
+    # - Ora Solare (CET, UTC+1): le 08:00 italiane corrispondono alle 07:00 UTC
+    # Il workflow viene invocato alle 06:00 e 07:00 UTC; lo script Python verifica l'orario di Roma
+    # garantendo che la notifica parta esattamente nella finestra delle 8:00 italiane tutto l'anno.
+    - cron: '0 6,7 * * 1-5'
+
+  workflow_dispatch:
+    inputs:
+      canale:
+        description: 'Canale da tracciare (ALL, A-L, M-Z)'
+        required: false
+        default: 'ALL'
+        type: choice
+        options:
+          - 'ALL'
+          - 'A-L'
+          - 'M-Z'
+      force_notify:
+        description: 'Invia notifica anche se non sono le 8:00'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  track-and-notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurazione Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Esecuzione Tracciamento e Rilevamento Modifiche
+        env:
+          CHECK_HOUR_8: ${{ github.event_name == 'schedule' && '1' || '0' }}
+          FORCE_NOTIFY: ${{ github.event.inputs.force_notify || (github.event_name != 'schedule' && '1' || '0') }}
+          CANALE: ${{ github.event.inputs.canale || secrets.CANALE || vars.CANALE || '' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC || vars.NTFY_TOPIC }}
+        run: |
+          python orario_tracker.py
+
+      - name: Salva storico e tabelle aggiornate nel repository
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/previous_schedule.json orario_lezioni.csv orario_oggi.md orario_settimana.md orario_completo.md orario_lezioni.html orario_lezioni.ics
+          if git diff --staged --quiet; then
+            echo "Nessun cambiamento nei file tracciati."
+          else
+            git commit -m "Aggiornamento orario e storico lezioni [skip ci]"
+            git push
+          fi
+
+      - name: Carica tabelle scaricabili (GitHub Artifacts)
+        uses: actions/upload-artifact@v4
+        with:
+          name: orario-fisica-tabelle
+          retention-days: 14
+          path: |
+            orario_lezioni.csv
+            orario_lezioni.ics
+            orario_lezioni.html
+            orario_oggi.md
+            orario_settimana.md
