@@ -2,13 +2,13 @@ name: Tracciamento Orario Lezioni Fisica UniBo
 
 on:
   schedule:
-    # Esecuzione automatica dal lunedì al venerdì alle 8:00 del mattino (orario italiano).
+    # Esecuzione automatica ogni giorno alle 8:00 del mattino (orario italiano).
     # In Italia:
     # - Ora Legale (CEST, UTC+2): le 08:00 italiane corrispondono alle 06:00 UTC
     # - Ora Solare (CET, UTC+1): le 08:00 italiane corrispondono alle 07:00 UTC
     # Il workflow viene invocato alle 06:00 e 07:00 UTC; lo script Python verifica l'orario di Roma
-    # garantendo che la notifica parta esattamente nella finestra delle 8:00 italiane tutto l'anno.
-    - cron: '0 6,7 * * 1-5'
+    # garantendo che la notifica parta esattamente alle 8:00 italiane tutto l'anno.
+    - cron: '0 6,7 * * *'
 
   workflow_dispatch:
     inputs:
