@@ -1,24 +1,7 @@
 {
-  "canale": "ALL",
-  "last_updated": "2026-09-17T15:54:30.039484+02:00",
+  "canale": "M-Z",
+  "last_updated": "2026-09-17T15:57:36.881904+02:00",
   "lessons": [
-    {
-      "id": "2026-09-16_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-09-16",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-16T09:00:00",
-      "end_iso": "2026-09-16T11:00:00"
-    },
     {
       "id": "2026-09-16_MECCANICA QUANTISTICA_M-Z_09:00 - 13:00",
       "data": "2026-09-16",
@@ -37,23 +20,6 @@
       "end_iso": "2026-09-16T13:00:00"
     },
     {
-      "id": "2026-09-16_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-09-16",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-16T11:00:00",
-      "end_iso": "2026-09-16T13:00:00"
-    },
-    {
       "id": "2026-09-16_ASTROFISICA_TUTTI_14:00 - 16:00",
       "data": "2026-09-16",
       "giorno": "Mercoledì",
@@ -69,23 +35,6 @@
       "note": "",
       "start_iso": "2026-09-16T14:00:00",
       "end_iso": "2026-09-16T16:00:00"
-    },
-    {
-      "id": "2026-09-17_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-09-17",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-17T09:00:00",
-      "end_iso": "2026-09-17T11:00:00"
     },
     {
       "id": "2026-09-17_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -120,40 +69,6 @@
       "note": "",
       "start_iso": "2026-09-17T11:00:00",
       "end_iso": "2026-09-17T13:00:00"
-    },
-    {
-      "id": "2026-09-17_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-09-17",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-17T11:00:00",
-      "end_iso": "2026-09-17T13:00:00"
-    },
-    {
-      "id": "2026-09-18_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-09-18",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-18T09:00:00",
-      "end_iso": "2026-09-18T11:00:00"
     },
     {
       "id": "2026-09-18_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -207,23 +122,6 @@
       "end_iso": "2026-09-18T16:00:00"
     },
     {
-      "id": "2026-09-21_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-09-21",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-21T09:00:00",
-      "end_iso": "2026-09-21T11:00:00"
-    },
-    {
       "id": "2026-09-21_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-09-21",
       "giorno": "Lunedì",
@@ -275,23 +173,6 @@
       "end_iso": "2026-09-21T16:00:00"
     },
     {
-      "id": "2026-09-22_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-09-22",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-22T09:00:00",
-      "end_iso": "2026-09-22T11:00:00"
-    },
-    {
       "id": "2026-09-22_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-09-22",
       "giorno": "Martedì",
@@ -326,23 +207,6 @@
       "end_iso": "2026-09-22T16:00:00"
     },
     {
-      "id": "2026-09-23_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-09-23",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-23T09:00:00",
-      "end_iso": "2026-09-23T11:00:00"
-    },
-    {
       "id": "2026-09-23_MECCANICA QUANTISTICA_M-Z_09:00 - 13:00",
       "data": "2026-09-23",
       "giorno": "Mercoledì",
@@ -357,23 +221,6 @@
       "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
       "start_iso": "2026-09-23T09:00:00",
-      "end_iso": "2026-09-23T13:00:00"
-    },
-    {
-      "id": "2026-09-23_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-09-23",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-23T11:00:00",
       "end_iso": "2026-09-23T13:00:00"
     },
     {
@@ -392,23 +239,6 @@
       "note": "",
       "start_iso": "2026-09-23T14:00:00",
       "end_iso": "2026-09-23T16:00:00"
-    },
-    {
-      "id": "2026-09-24_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-09-24",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-24T09:00:00",
-      "end_iso": "2026-09-24T11:00:00"
     },
     {
       "id": "2026-09-24_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -443,40 +273,6 @@
       "note": "",
       "start_iso": "2026-09-24T11:00:00",
       "end_iso": "2026-09-24T13:00:00"
-    },
-    {
-      "id": "2026-09-24_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-09-24",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-24T11:00:00",
-      "end_iso": "2026-09-24T13:00:00"
-    },
-    {
-      "id": "2026-09-25_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-09-25",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-25T09:00:00",
-      "end_iso": "2026-09-25T11:00:00"
     },
     {
       "id": "2026-09-25_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -530,23 +326,6 @@
       "end_iso": "2026-09-25T16:00:00"
     },
     {
-      "id": "2026-09-28_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-09-28",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-28T09:00:00",
-      "end_iso": "2026-09-28T11:00:00"
-    },
-    {
       "id": "2026-09-28_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-09-28",
       "giorno": "Lunedì",
@@ -598,23 +377,6 @@
       "end_iso": "2026-09-28T16:00:00"
     },
     {
-      "id": "2026-09-29_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-09-29",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-29T09:00:00",
-      "end_iso": "2026-09-29T11:00:00"
-    },
-    {
       "id": "2026-09-29_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-09-29",
       "giorno": "Martedì",
@@ -630,23 +392,6 @@
       "note": "",
       "start_iso": "2026-09-29T09:00:00",
       "end_iso": "2026-09-29T11:00:00"
-    },
-    {
-      "id": "2026-09-29_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-09-29",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-29T11:00:00",
-      "end_iso": "2026-09-29T13:00:00"
     },
     {
       "id": "2026-09-29_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
@@ -666,23 +411,6 @@
       "end_iso": "2026-09-29T16:00:00"
     },
     {
-      "id": "2026-09-30_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-09-30",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-30T09:00:00",
-      "end_iso": "2026-09-30T11:00:00"
-    },
-    {
       "id": "2026-09-30_MECCANICA QUANTISTICA_M-Z_09:00 - 13:00",
       "data": "2026-09-30",
       "giorno": "Mercoledì",
@@ -697,23 +425,6 @@
       "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
       "start_iso": "2026-09-30T09:00:00",
-      "end_iso": "2026-09-30T13:00:00"
-    },
-    {
-      "id": "2026-09-30_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-09-30",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-30T11:00:00",
       "end_iso": "2026-09-30T13:00:00"
     },
     {
@@ -732,23 +443,6 @@
       "note": "",
       "start_iso": "2026-09-30T14:00:00",
       "end_iso": "2026-09-30T16:00:00"
-    },
-    {
-      "id": "2026-10-01_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-01",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-01T09:00:00",
-      "end_iso": "2026-10-01T11:00:00"
     },
     {
       "id": "2026-10-01_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -783,40 +477,6 @@
       "note": "",
       "start_iso": "2026-10-01T11:00:00",
       "end_iso": "2026-10-01T13:00:00"
-    },
-    {
-      "id": "2026-10-01_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-10-01",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-01T11:00:00",
-      "end_iso": "2026-10-01T13:00:00"
-    },
-    {
-      "id": "2026-10-02_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-10-02",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-02T09:00:00",
-      "end_iso": "2026-10-02T11:00:00"
     },
     {
       "id": "2026-10-02_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -870,23 +530,6 @@
       "end_iso": "2026-10-02T16:00:00"
     },
     {
-      "id": "2026-10-05_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-05",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-05T09:00:00",
-      "end_iso": "2026-10-05T11:00:00"
-    },
-    {
       "id": "2026-10-05_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-05",
       "giorno": "Lunedì",
@@ -938,23 +581,6 @@
       "end_iso": "2026-10-05T16:00:00"
     },
     {
-      "id": "2026-10-06_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-06",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-06T09:00:00",
-      "end_iso": "2026-10-06T11:00:00"
-    },
-    {
       "id": "2026-10-06_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-06",
       "giorno": "Martedì",
@@ -970,23 +596,6 @@
       "note": "",
       "start_iso": "2026-10-06T09:00:00",
       "end_iso": "2026-10-06T11:00:00"
-    },
-    {
-      "id": "2026-10-06_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-10-06",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-06T11:00:00",
-      "end_iso": "2026-10-06T13:00:00"
     },
     {
       "id": "2026-10-06_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -1023,23 +632,6 @@
       "end_iso": "2026-10-06T16:00:00"
     },
     {
-      "id": "2026-10-07_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-10-07",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-07T09:00:00",
-      "end_iso": "2026-10-07T11:00:00"
-    },
-    {
       "id": "2026-10-07_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-10-07",
       "giorno": "Mercoledì",
@@ -1055,23 +647,6 @@
       "note": "",
       "start_iso": "2026-10-07T09:00:00",
       "end_iso": "2026-10-07T11:00:00"
-    },
-    {
-      "id": "2026-10-07_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-10-07",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-07T11:00:00",
-      "end_iso": "2026-10-07T13:00:00"
     },
     {
       "id": "2026-10-07_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -1108,23 +683,6 @@
       "end_iso": "2026-10-07T16:00:00"
     },
     {
-      "id": "2026-10-08_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-08",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-08T09:00:00",
-      "end_iso": "2026-10-08T11:00:00"
-    },
-    {
       "id": "2026-10-08_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-10-08",
       "giorno": "Giovedì",
@@ -1157,40 +715,6 @@
       "note": "",
       "start_iso": "2026-10-08T11:00:00",
       "end_iso": "2026-10-08T13:00:00"
-    },
-    {
-      "id": "2026-10-08_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-10-08",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-08T11:00:00",
-      "end_iso": "2026-10-08T13:00:00"
-    },
-    {
-      "id": "2026-10-09_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-10-09",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-09T09:00:00",
-      "end_iso": "2026-10-09T11:00:00"
     },
     {
       "id": "2026-10-09_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1244,23 +768,6 @@
       "end_iso": "2026-10-09T16:00:00"
     },
     {
-      "id": "2026-10-12_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-12",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-12T09:00:00",
-      "end_iso": "2026-10-12T11:00:00"
-    },
-    {
       "id": "2026-10-12_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-12",
       "giorno": "Lunedì",
@@ -1312,23 +819,6 @@
       "end_iso": "2026-10-12T16:00:00"
     },
     {
-      "id": "2026-10-13_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-13",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-13T09:00:00",
-      "end_iso": "2026-10-13T11:00:00"
-    },
-    {
       "id": "2026-10-13_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-13",
       "giorno": "Martedì",
@@ -1344,23 +834,6 @@
       "note": "",
       "start_iso": "2026-10-13T09:00:00",
       "end_iso": "2026-10-13T11:00:00"
-    },
-    {
-      "id": "2026-10-13_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-10-13",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-13T11:00:00",
-      "end_iso": "2026-10-13T13:00:00"
     },
     {
       "id": "2026-10-13_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -1397,23 +870,6 @@
       "end_iso": "2026-10-13T16:00:00"
     },
     {
-      "id": "2026-10-14_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-10-14",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-14T09:00:00",
-      "end_iso": "2026-10-14T11:00:00"
-    },
-    {
       "id": "2026-10-14_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-10-14",
       "giorno": "Mercoledì",
@@ -1429,23 +885,6 @@
       "note": "",
       "start_iso": "2026-10-14T09:00:00",
       "end_iso": "2026-10-14T11:00:00"
-    },
-    {
-      "id": "2026-10-14_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-10-14",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-14T11:00:00",
-      "end_iso": "2026-10-14T13:00:00"
     },
     {
       "id": "2026-10-14_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -1482,23 +921,6 @@
       "end_iso": "2026-10-14T16:00:00"
     },
     {
-      "id": "2026-10-15_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-15",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-15T09:00:00",
-      "end_iso": "2026-10-15T11:00:00"
-    },
-    {
       "id": "2026-10-15_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-10-15",
       "giorno": "Giovedì",
@@ -1531,40 +953,6 @@
       "note": "",
       "start_iso": "2026-10-15T11:00:00",
       "end_iso": "2026-10-15T13:00:00"
-    },
-    {
-      "id": "2026-10-15_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-10-15",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-15T11:00:00",
-      "end_iso": "2026-10-15T13:00:00"
-    },
-    {
-      "id": "2026-10-16_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-10-16",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-16T09:00:00",
-      "end_iso": "2026-10-16T11:00:00"
     },
     {
       "id": "2026-10-16_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1618,23 +1006,6 @@
       "end_iso": "2026-10-16T16:00:00"
     },
     {
-      "id": "2026-10-19_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-19",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-19T09:00:00",
-      "end_iso": "2026-10-19T11:00:00"
-    },
-    {
       "id": "2026-10-19_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-19",
       "giorno": "Lunedì",
@@ -1686,23 +1057,6 @@
       "end_iso": "2026-10-19T16:00:00"
     },
     {
-      "id": "2026-10-20_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-20",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-20T09:00:00",
-      "end_iso": "2026-10-20T11:00:00"
-    },
-    {
       "id": "2026-10-20_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-20",
       "giorno": "Martedì",
@@ -1718,23 +1072,6 @@
       "note": "",
       "start_iso": "2026-10-20T09:00:00",
       "end_iso": "2026-10-20T11:00:00"
-    },
-    {
-      "id": "2026-10-20_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-10-20",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-20T11:00:00",
-      "end_iso": "2026-10-20T13:00:00"
     },
     {
       "id": "2026-10-20_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -1771,23 +1108,6 @@
       "end_iso": "2026-10-20T16:00:00"
     },
     {
-      "id": "2026-10-21_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-10-21",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-21T09:00:00",
-      "end_iso": "2026-10-21T11:00:00"
-    },
-    {
       "id": "2026-10-21_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-10-21",
       "giorno": "Mercoledì",
@@ -1803,23 +1123,6 @@
       "note": "",
       "start_iso": "2026-10-21T09:00:00",
       "end_iso": "2026-10-21T11:00:00"
-    },
-    {
-      "id": "2026-10-21_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-10-21",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-21T11:00:00",
-      "end_iso": "2026-10-21T13:00:00"
     },
     {
       "id": "2026-10-21_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -1856,23 +1159,6 @@
       "end_iso": "2026-10-21T16:00:00"
     },
     {
-      "id": "2026-10-22_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-22",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-22T09:00:00",
-      "end_iso": "2026-10-22T11:00:00"
-    },
-    {
       "id": "2026-10-22_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-10-22",
       "giorno": "Giovedì",
@@ -1905,40 +1191,6 @@
       "note": "",
       "start_iso": "2026-10-22T11:00:00",
       "end_iso": "2026-10-22T13:00:00"
-    },
-    {
-      "id": "2026-10-22_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-10-22",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-22T11:00:00",
-      "end_iso": "2026-10-22T13:00:00"
-    },
-    {
-      "id": "2026-10-23_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-10-23",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-23T09:00:00",
-      "end_iso": "2026-10-23T11:00:00"
     },
     {
       "id": "2026-10-23_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1992,23 +1244,6 @@
       "end_iso": "2026-10-23T16:00:00"
     },
     {
-      "id": "2026-10-26_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-26",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-26T09:00:00",
-      "end_iso": "2026-10-26T11:00:00"
-    },
-    {
       "id": "2026-10-26_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-26",
       "giorno": "Lunedì",
@@ -2060,23 +1295,6 @@
       "end_iso": "2026-10-26T16:00:00"
     },
     {
-      "id": "2026-10-27_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-10-27",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-27T09:00:00",
-      "end_iso": "2026-10-27T11:00:00"
-    },
-    {
       "id": "2026-10-27_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-27",
       "giorno": "Martedì",
@@ -2092,23 +1310,6 @@
       "note": "",
       "start_iso": "2026-10-27T09:00:00",
       "end_iso": "2026-10-27T11:00:00"
-    },
-    {
-      "id": "2026-10-27_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-10-27",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-27T11:00:00",
-      "end_iso": "2026-10-27T13:00:00"
     },
     {
       "id": "2026-10-27_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -2143,23 +1344,6 @@
       "note": "",
       "start_iso": "2026-10-27T14:00:00",
       "end_iso": "2026-10-27T16:00:00"
-    },
-    {
-      "id": "2026-11-02_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-02",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-02T09:00:00",
-      "end_iso": "2026-11-02T11:00:00"
     },
     {
       "id": "2026-11-02_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -2213,23 +1397,6 @@
       "end_iso": "2026-11-02T16:00:00"
     },
     {
-      "id": "2026-11-03_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-03",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-03T09:00:00",
-      "end_iso": "2026-11-03T11:00:00"
-    },
-    {
       "id": "2026-11-03_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-11-03",
       "giorno": "Martedì",
@@ -2245,23 +1412,6 @@
       "note": "",
       "start_iso": "2026-11-03T09:00:00",
       "end_iso": "2026-11-03T11:00:00"
-    },
-    {
-      "id": "2026-11-03_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-11-03",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-03T11:00:00",
-      "end_iso": "2026-11-03T13:00:00"
     },
     {
       "id": "2026-11-03_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -2298,23 +1448,6 @@
       "end_iso": "2026-11-03T16:00:00"
     },
     {
-      "id": "2026-11-04_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-11-04",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-04T09:00:00",
-      "end_iso": "2026-11-04T11:00:00"
-    },
-    {
       "id": "2026-11-04_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-11-04",
       "giorno": "Mercoledì",
@@ -2330,23 +1463,6 @@
       "note": "",
       "start_iso": "2026-11-04T09:00:00",
       "end_iso": "2026-11-04T11:00:00"
-    },
-    {
-      "id": "2026-11-04_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-11-04",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-04T11:00:00",
-      "end_iso": "2026-11-04T13:00:00"
     },
     {
       "id": "2026-11-04_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -2383,23 +1499,6 @@
       "end_iso": "2026-11-04T16:00:00"
     },
     {
-      "id": "2026-11-05_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-05",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-05T09:00:00",
-      "end_iso": "2026-11-05T11:00:00"
-    },
-    {
       "id": "2026-11-05_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-11-05",
       "giorno": "Giovedì",
@@ -2432,40 +1531,6 @@
       "note": "",
       "start_iso": "2026-11-05T11:00:00",
       "end_iso": "2026-11-05T13:00:00"
-    },
-    {
-      "id": "2026-11-05_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-11-05",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-05T11:00:00",
-      "end_iso": "2026-11-05T13:00:00"
-    },
-    {
-      "id": "2026-11-06_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-11-06",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-06T09:00:00",
-      "end_iso": "2026-11-06T11:00:00"
     },
     {
       "id": "2026-11-06_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -2519,23 +1584,6 @@
       "end_iso": "2026-11-06T16:00:00"
     },
     {
-      "id": "2026-11-09_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-09",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-09T09:00:00",
-      "end_iso": "2026-11-09T11:00:00"
-    },
-    {
       "id": "2026-11-09_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-11-09",
       "giorno": "Lunedì",
@@ -2587,23 +1635,6 @@
       "end_iso": "2026-11-09T16:00:00"
     },
     {
-      "id": "2026-11-10_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-10",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-10T09:00:00",
-      "end_iso": "2026-11-10T11:00:00"
-    },
-    {
       "id": "2026-11-10_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-11-10",
       "giorno": "Martedì",
@@ -2619,23 +1650,6 @@
       "note": "",
       "start_iso": "2026-11-10T09:00:00",
       "end_iso": "2026-11-10T11:00:00"
-    },
-    {
-      "id": "2026-11-10_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-11-10",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-10T11:00:00",
-      "end_iso": "2026-11-10T13:00:00"
     },
     {
       "id": "2026-11-10_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -2672,23 +1686,6 @@
       "end_iso": "2026-11-10T16:00:00"
     },
     {
-      "id": "2026-11-11_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-11-11",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-11T09:00:00",
-      "end_iso": "2026-11-11T11:00:00"
-    },
-    {
       "id": "2026-11-11_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-11-11",
       "giorno": "Mercoledì",
@@ -2704,23 +1701,6 @@
       "note": "",
       "start_iso": "2026-11-11T09:00:00",
       "end_iso": "2026-11-11T11:00:00"
-    },
-    {
-      "id": "2026-11-11_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-11-11",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-11T11:00:00",
-      "end_iso": "2026-11-11T13:00:00"
     },
     {
       "id": "2026-11-11_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -2757,23 +1737,6 @@
       "end_iso": "2026-11-11T16:00:00"
     },
     {
-      "id": "2026-11-12_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-12",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-12T09:00:00",
-      "end_iso": "2026-11-12T11:00:00"
-    },
-    {
       "id": "2026-11-12_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-11-12",
       "giorno": "Giovedì",
@@ -2808,23 +1771,6 @@
       "end_iso": "2026-11-12T13:00:00"
     },
     {
-      "id": "2026-11-12_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-11-12",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-12T11:00:00",
-      "end_iso": "2026-11-12T13:00:00"
-    },
-    {
       "id": "2026-11-12_LABORATORIO DI ELETTRONICA_TUTTI_14:00 - 18:00",
       "data": "2026-11-12",
       "giorno": "Giovedì",
@@ -2840,23 +1786,6 @@
       "note": "Turni di laboratorio",
       "start_iso": "2026-11-12T14:00:00",
       "end_iso": "2026-11-12T18:00:00"
-    },
-    {
-      "id": "2026-11-13_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-11-13",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-13T09:00:00",
-      "end_iso": "2026-11-13T11:00:00"
     },
     {
       "id": "2026-11-13_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -2910,23 +1839,6 @@
       "end_iso": "2026-11-13T18:00:00"
     },
     {
-      "id": "2026-11-16_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-16",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-16T09:00:00",
-      "end_iso": "2026-11-16T11:00:00"
-    },
-    {
       "id": "2026-11-16_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-11-16",
       "giorno": "Lunedì",
@@ -2978,23 +1890,6 @@
       "end_iso": "2026-11-16T16:00:00"
     },
     {
-      "id": "2026-11-17_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-17",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-17T09:00:00",
-      "end_iso": "2026-11-17T11:00:00"
-    },
-    {
       "id": "2026-11-17_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-11-17",
       "giorno": "Martedì",
@@ -3010,23 +1905,6 @@
       "note": "",
       "start_iso": "2026-11-17T09:00:00",
       "end_iso": "2026-11-17T11:00:00"
-    },
-    {
-      "id": "2026-11-17_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-11-17",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-17T11:00:00",
-      "end_iso": "2026-11-17T13:00:00"
     },
     {
       "id": "2026-11-17_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -3063,23 +1941,6 @@
       "end_iso": "2026-11-17T16:00:00"
     },
     {
-      "id": "2026-11-18_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-11-18",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-18T09:00:00",
-      "end_iso": "2026-11-18T11:00:00"
-    },
-    {
       "id": "2026-11-18_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-11-18",
       "giorno": "Mercoledì",
@@ -3095,23 +1956,6 @@
       "note": "",
       "start_iso": "2026-11-18T09:00:00",
       "end_iso": "2026-11-18T11:00:00"
-    },
-    {
-      "id": "2026-11-18_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-11-18",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-18T11:00:00",
-      "end_iso": "2026-11-18T13:00:00"
     },
     {
       "id": "2026-11-18_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -3148,23 +1992,6 @@
       "end_iso": "2026-11-18T16:00:00"
     },
     {
-      "id": "2026-11-19_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-19",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-19T09:00:00",
-      "end_iso": "2026-11-19T11:00:00"
-    },
-    {
       "id": "2026-11-19_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-11-19",
       "giorno": "Giovedì",
@@ -3199,23 +2026,6 @@
       "end_iso": "2026-11-19T13:00:00"
     },
     {
-      "id": "2026-11-19_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-11-19",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-19T11:00:00",
-      "end_iso": "2026-11-19T13:00:00"
-    },
-    {
       "id": "2026-11-19_LABORATORIO DI ELETTRONICA_TUTTI_14:00 - 18:00",
       "data": "2026-11-19",
       "giorno": "Giovedì",
@@ -3231,23 +2041,6 @@
       "note": "Turni di laboratorio",
       "start_iso": "2026-11-19T14:00:00",
       "end_iso": "2026-11-19T18:00:00"
-    },
-    {
-      "id": "2026-11-20_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-11-20",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-20T09:00:00",
-      "end_iso": "2026-11-20T11:00:00"
     },
     {
       "id": "2026-11-20_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -3299,23 +2092,6 @@
       "note": "Turni di laboratorio",
       "start_iso": "2026-11-20T14:00:00",
       "end_iso": "2026-11-20T18:00:00"
-    },
-    {
-      "id": "2026-11-23_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-23",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA EX ESERCIZI",
-      "indirizzo": "Via San Giacomo, 12 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-23T09:00:00",
-      "end_iso": "2026-11-23T11:00:00"
     },
     {
       "id": "2026-11-23_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -3403,23 +2179,6 @@
       "end_iso": "2026-11-24T13:00:00"
     },
     {
-      "id": "2026-11-24_FISICA DELLA MATERIA_A-L_13:00 - 15:00",
-      "data": "2026-11-24",
-      "giorno": "Martedì",
-      "ora_inizio": "13:00",
-      "ora_fine": "15:00",
-      "orario": "13:00 - 15:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA MAGNA",
-      "indirizzo": "Via Irnerio, 46 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-24T13:00:00",
-      "end_iso": "2026-11-24T15:00:00"
-    },
-    {
       "id": "2026-11-24_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
       "data": "2026-11-24",
       "giorno": "Martedì",
@@ -3437,40 +2196,6 @@
       "end_iso": "2026-11-24T16:00:00"
     },
     {
-      "id": "2026-11-24_FISICA NUCLEARE E SUBNUCLEARE_A-L_15:00 - 17:00",
-      "data": "2026-11-24",
-      "giorno": "Martedì",
-      "ora_inizio": "15:00",
-      "ora_fine": "17:00",
-      "orario": "15:00 - 17:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA MAGNA",
-      "indirizzo": "Via Irnerio, 46 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-24T15:00:00",
-      "end_iso": "2026-11-24T17:00:00"
-    },
-    {
-      "id": "2026-11-25_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-11-25",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-25T09:00:00",
-      "end_iso": "2026-11-25T11:00:00"
-    },
-    {
       "id": "2026-11-25_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-11-25",
       "giorno": "Mercoledì",
@@ -3486,23 +2211,6 @@
       "note": "",
       "start_iso": "2026-11-25T09:00:00",
       "end_iso": "2026-11-25T11:00:00"
-    },
-    {
-      "id": "2026-11-25_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-11-25",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-25T11:00:00",
-      "end_iso": "2026-11-25T13:00:00"
     },
     {
       "id": "2026-11-25_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -3573,23 +2281,6 @@
       "end_iso": "2026-11-26T13:00:00"
     },
     {
-      "id": "2026-11-26_FISICA NUCLEARE E SUBNUCLEARE_A-L_13:00 - 15:00",
-      "data": "2026-11-26",
-      "giorno": "Giovedì",
-      "ora_inizio": "13:00",
-      "ora_fine": "15:00",
-      "orario": "13:00 - 15:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA EX ESERCIZI",
-      "indirizzo": "Via San Giacomo, 12 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-26T13:00:00",
-      "end_iso": "2026-11-26T15:00:00"
-    },
-    {
       "id": "2026-11-26_LABORATORIO DI ELETTRONICA_TUTTI_14:00 - 18:00",
       "data": "2026-11-26",
       "giorno": "Giovedì",
@@ -3605,40 +2296,6 @@
       "note": "Turni di laboratorio",
       "start_iso": "2026-11-26T14:00:00",
       "end_iso": "2026-11-26T18:00:00"
-    },
-    {
-      "id": "2026-11-26_MECCANICA QUANTISTICA_A-L_15:00 - 17:00",
-      "data": "2026-11-26",
-      "giorno": "Giovedì",
-      "ora_inizio": "15:00",
-      "ora_fine": "17:00",
-      "orario": "15:00 - 17:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA EX ESERCIZI",
-      "indirizzo": "Via San Giacomo, 12 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-26T15:00:00",
-      "end_iso": "2026-11-26T17:00:00"
-    },
-    {
-      "id": "2026-11-27_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-11-27",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-27T09:00:00",
-      "end_iso": "2026-11-27T11:00:00"
     },
     {
       "id": "2026-11-27_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -3692,23 +2349,6 @@
       "end_iso": "2026-11-27T18:00:00"
     },
     {
-      "id": "2026-11-30_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-11-30",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-30T09:00:00",
-      "end_iso": "2026-11-30T11:00:00"
-    },
-    {
       "id": "2026-11-30_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-11-30",
       "giorno": "Lunedì",
@@ -3760,23 +2400,6 @@
       "end_iso": "2026-11-30T16:00:00"
     },
     {
-      "id": "2026-12-01_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-12-01",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-01T09:00:00",
-      "end_iso": "2026-12-01T11:00:00"
-    },
-    {
       "id": "2026-12-01_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-12-01",
       "giorno": "Martedì",
@@ -3792,23 +2415,6 @@
       "note": "",
       "start_iso": "2026-12-01T09:00:00",
       "end_iso": "2026-12-01T11:00:00"
-    },
-    {
-      "id": "2026-12-01_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-12-01",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-01T11:00:00",
-      "end_iso": "2026-12-01T13:00:00"
     },
     {
       "id": "2026-12-01_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -3845,23 +2451,6 @@
       "end_iso": "2026-12-01T16:00:00"
     },
     {
-      "id": "2026-12-02_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-12-02",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-02T09:00:00",
-      "end_iso": "2026-12-02T11:00:00"
-    },
-    {
       "id": "2026-12-02_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-12-02",
       "giorno": "Mercoledì",
@@ -3877,23 +2466,6 @@
       "note": "",
       "start_iso": "2026-12-02T09:00:00",
       "end_iso": "2026-12-02T11:00:00"
-    },
-    {
-      "id": "2026-12-02_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-12-02",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-02T11:00:00",
-      "end_iso": "2026-12-02T13:00:00"
     },
     {
       "id": "2026-12-02_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -3930,23 +2502,6 @@
       "end_iso": "2026-12-02T16:00:00"
     },
     {
-      "id": "2026-12-03_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-12-03",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-03T09:00:00",
-      "end_iso": "2026-12-03T11:00:00"
-    },
-    {
       "id": "2026-12-03_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-12-03",
       "giorno": "Giovedì",
@@ -3981,23 +2536,6 @@
       "end_iso": "2026-12-03T13:00:00"
     },
     {
-      "id": "2026-12-03_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-12-03",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-03T11:00:00",
-      "end_iso": "2026-12-03T13:00:00"
-    },
-    {
       "id": "2026-12-03_LABORATORIO DI ELETTRONICA_TUTTI_14:00 - 18:00",
       "data": "2026-12-03",
       "giorno": "Giovedì",
@@ -4013,23 +2551,6 @@
       "note": "Turni di laboratorio",
       "start_iso": "2026-12-03T14:00:00",
       "end_iso": "2026-12-03T18:00:00"
-    },
-    {
-      "id": "2026-12-04_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-12-04",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-04T09:00:00",
-      "end_iso": "2026-12-04T11:00:00"
     },
     {
       "id": "2026-12-04_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -4083,23 +2604,6 @@
       "end_iso": "2026-12-04T18:00:00"
     },
     {
-      "id": "2026-12-09_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-12-09",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-09T09:00:00",
-      "end_iso": "2026-12-09T11:00:00"
-    },
-    {
       "id": "2026-12-09_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-12-09",
       "giorno": "Mercoledì",
@@ -4115,23 +2619,6 @@
       "note": "",
       "start_iso": "2026-12-09T09:00:00",
       "end_iso": "2026-12-09T11:00:00"
-    },
-    {
-      "id": "2026-12-09_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-12-09",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-09T11:00:00",
-      "end_iso": "2026-12-09T13:00:00"
     },
     {
       "id": "2026-12-09_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -4168,23 +2655,6 @@
       "end_iso": "2026-12-09T16:00:00"
     },
     {
-      "id": "2026-12-10_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-12-10",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-10T09:00:00",
-      "end_iso": "2026-12-10T11:00:00"
-    },
-    {
       "id": "2026-12-10_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-12-10",
       "giorno": "Giovedì",
@@ -4219,23 +2689,6 @@
       "end_iso": "2026-12-10T13:00:00"
     },
     {
-      "id": "2026-12-10_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-12-10",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-10T11:00:00",
-      "end_iso": "2026-12-10T13:00:00"
-    },
-    {
       "id": "2026-12-10_LABORATORIO DI ELETTRONICA_TUTTI_14:00 - 18:00",
       "data": "2026-12-10",
       "giorno": "Giovedì",
@@ -4251,23 +2704,6 @@
       "note": "Turni di laboratorio",
       "start_iso": "2026-12-10T14:00:00",
       "end_iso": "2026-12-10T18:00:00"
-    },
-    {
-      "id": "2026-12-11_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-12-11",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-11T09:00:00",
-      "end_iso": "2026-12-11T11:00:00"
     },
     {
       "id": "2026-12-11_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -4321,23 +2757,6 @@
       "end_iso": "2026-12-11T18:00:00"
     },
     {
-      "id": "2026-12-14_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-12-14",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-14T09:00:00",
-      "end_iso": "2026-12-14T11:00:00"
-    },
-    {
       "id": "2026-12-14_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-12-14",
       "giorno": "Lunedì",
@@ -4389,23 +2808,6 @@
       "end_iso": "2026-12-14T16:00:00"
     },
     {
-      "id": "2026-12-15_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-12-15",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-15T09:00:00",
-      "end_iso": "2026-12-15T11:00:00"
-    },
-    {
       "id": "2026-12-15_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-12-15",
       "giorno": "Martedì",
@@ -4421,23 +2823,6 @@
       "note": "",
       "start_iso": "2026-12-15T09:00:00",
       "end_iso": "2026-12-15T11:00:00"
-    },
-    {
-      "id": "2026-12-15_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-12-15",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-15T11:00:00",
-      "end_iso": "2026-12-15T13:00:00"
     },
     {
       "id": "2026-12-15_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -4474,23 +2859,6 @@
       "end_iso": "2026-12-15T16:00:00"
     },
     {
-      "id": "2026-12-16_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-12-16",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-16T09:00:00",
-      "end_iso": "2026-12-16T11:00:00"
-    },
-    {
       "id": "2026-12-16_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-12-16",
       "giorno": "Mercoledì",
@@ -4506,23 +2874,6 @@
       "note": "",
       "start_iso": "2026-12-16T09:00:00",
       "end_iso": "2026-12-16T11:00:00"
-    },
-    {
-      "id": "2026-12-16_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-12-16",
-      "giorno": "Mercoledì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-16T11:00:00",
-      "end_iso": "2026-12-16T13:00:00"
     },
     {
       "id": "2026-12-16_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
@@ -4559,23 +2910,6 @@
       "end_iso": "2026-12-16T16:00:00"
     },
     {
-      "id": "2026-12-17_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-12-17",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-17T09:00:00",
-      "end_iso": "2026-12-17T11:00:00"
-    },
-    {
       "id": "2026-12-17_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-12-17",
       "giorno": "Giovedì",
@@ -4610,23 +2944,6 @@
       "end_iso": "2026-12-17T13:00:00"
     },
     {
-      "id": "2026-12-17_MECCANICA QUANTISTICA_A-L_11:00 - 13:00",
-      "data": "2026-12-17",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-17T11:00:00",
-      "end_iso": "2026-12-17T13:00:00"
-    },
-    {
       "id": "2026-12-17_LABORATORIO DI ELETTRONICA_TUTTI_14:00 - 18:00",
       "data": "2026-12-17",
       "giorno": "Giovedì",
@@ -4642,23 +2959,6 @@
       "note": "Turni di laboratorio",
       "start_iso": "2026-12-17T14:00:00",
       "end_iso": "2026-12-17T18:00:00"
-    },
-    {
-      "id": "2026-12-18_MECCANICA QUANTISTICA_A-L_09:00 - 11:00",
-      "data": "2026-12-18",
-      "giorno": "Venerdì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Roberto Zucchini",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-18T09:00:00",
-      "end_iso": "2026-12-18T11:00:00"
     },
     {
       "id": "2026-12-18_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -4712,23 +3012,6 @@
       "end_iso": "2026-12-18T18:00:00"
     },
     {
-      "id": "2026-12-21_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-12-21",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-21T09:00:00",
-      "end_iso": "2026-12-21T11:00:00"
-    },
-    {
       "id": "2026-12-21_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-12-21",
       "giorno": "Lunedì",
@@ -4780,23 +3063,6 @@
       "end_iso": "2026-12-21T16:00:00"
     },
     {
-      "id": "2026-12-22_FISICA NUCLEARE E SUBNUCLEARE_A-L_09:00 - 11:00",
-      "data": "2026-12-22",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (A-L) / (1) Modulo 1",
-      "canale": "A-L",
-      "docente": "Nicola Semprini Cesari",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-22T09:00:00",
-      "end_iso": "2026-12-22T11:00:00"
-    },
-    {
       "id": "2026-12-22_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-12-22",
       "giorno": "Martedì",
@@ -4812,23 +3078,6 @@
       "note": "",
       "start_iso": "2026-12-22T09:00:00",
       "end_iso": "2026-12-22T11:00:00"
-    },
-    {
-      "id": "2026-12-22_FISICA DELLA MATERIA_A-L_11:00 - 13:00",
-      "data": "2026-12-22",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (A-L) / (2) Modulo 2",
-      "canale": "A-L",
-      "docente": "Margherita Marsili",
-      "aula": "AULA A - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-22T11:00:00",
-      "end_iso": "2026-12-22T13:00:00"
     },
     {
       "id": "2026-12-22_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",

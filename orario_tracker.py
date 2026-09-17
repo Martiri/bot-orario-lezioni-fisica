@@ -53,12 +53,12 @@ def normalize_text(text: str) -> str:
     nfkd = unicodedata.normalize("NFKD", text.lower())
     return "".join(c for c in nfkd if not unicodedata.combining(c)).strip()
 
-def extract_channel(title: str) -> str:
-    """Estrae l'eventuale canale (A-L o M-Z) dal titolo dell'insegnamento."""
-    t_up = title.upper()
-    if "(A-L)" in t_up or "A-L" in t_up:
+def extract_channel(title: str, cod_sdoppiamento: str = "") -> str:
+    """Estrae l'eventuale canale (A-L o M-Z) dal titolo dell'insegnamento o dal codice sdoppiamento."""
+    combined = f"{title} {cod_sdoppiamento}".upper()
+    if "(A-L)" in combined or "A-L" in combined:
         return "A-L"
-    elif "(M-Z)" in t_up or "M-Z" in t_up:
+    elif "(M-Z)" in combined or "M-Z" in combined:
         return "M-Z"
     return "TUTTI"
 
@@ -129,7 +129,7 @@ def parse_events(raw_events: list, target_courses: list, user_channel: str) -> l
         if not matches_target_courses(title, target_courses):
             continue
             
-        channel = extract_channel(title)
+        channel = extract_channel(title, ev.get("cod_sdoppiamento", ""))
         if not filter_by_channel(channel, user_channel):
             continue
             

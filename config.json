@@ -4,7 +4,7 @@
   "immatricolazione_codice": "92444",
   "anno_di_corso": 3,
   "curricula": "000-000",
-  "canale": "ALL",
+  "canale": "M-Z",
   "api_url": "https://corsi.unibo.it/laurea/fisica/orario-lezioni/@@orario_reale_json",
   "target_courses": [
     "Meccanica quantistica",

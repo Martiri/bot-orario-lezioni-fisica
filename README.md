@@ -55,7 +55,7 @@ Nel tuo repository GitHub:
 2. Clicca su **New repository secret** e aggiungi:
    - `TELEGRAM_BOT_TOKEN`: incolla il token fornito da BotFather.
    - `TELEGRAM_CHAT_ID`: incolla il tuo ID numerico.
-   - *(Opzionale)* `CANALE`: inserisci `A-L` se appartieni al canale A-L, oppure `M-Z` se appartieni al canale M-Z. Lascia vuoto o imposta `ALL` per vedere entrambi i canali.
+   - *(Opzionale)* `CANALE`: è già preimpostato su `M-Z` come richiesto. Se non impostato nei Secret, userà automaticamente il canale `M-Z` definito in `config.json`.
 
 ---
 

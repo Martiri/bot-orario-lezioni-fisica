@@ -13,14 +13,14 @@ on:
   workflow_dispatch:
     inputs:
       canale:
-        description: 'Canale da tracciare (ALL, A-L, M-Z)'
+        description: 'Canale da tracciare (M-Z, A-L, ALL)'
         required: false
-        default: 'ALL'
+        default: 'M-Z'
         type: choice
         options:
-          - 'ALL'
-          - 'A-L'
           - 'M-Z'
+          - 'A-L'
+          - 'ALL'
       force_notify:
         description: 'Invia notifica anche se non sono le 8:00'
         type: boolean
