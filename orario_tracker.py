@@ -615,17 +615,23 @@ def build_issue_markdown(today_lessons, week_lessons, changes, is_first_run, now
         lines.append("")
         
     # 4. DOWNLOAD E TABELLE
+    repo_name = os.getenv("GITHUB_REPOSITORY", "Martiri/bot-orario-lezioni-fisica")
+    raw_base = f"https://raw.githubusercontent.com/{repo_name}/main"
+    blob_base = f"https://github.com/{repo_name}/blob/main"
+    owner = os.getenv("GITHUB_REPOSITORY_OWNER") or (repo_name.split("/")[0] if "/" in repo_name else "Martiri")
+
     lines.append("---")
     lines.append("### 📥 Tabelle e Calendari Scaricabili")
-    lines.append("- 📊 Tabella completa in CSV (Excel): [`orario_lezioni.csv`](./orario_lezioni.csv)")
-    lines.append("- 📅 Calendario iCal per smartphone e Google Calendar: [`orario_lezioni.ics`](./orario_lezioni.ics)")
-    lines.append("- 🌐 Pagina web interattiva: [`orario_lezioni.html`](./orario_lezioni.html)")
-    lines.append("\n*Notifica generata automaticamente dal Tracciatore Orari Lezioni UniBo.*")
+    lines.append(f"- 📅 **Calendario iCal (Google / Apple / Outlook)**: [📲 Scarica / Aggiungi `orario_lezioni.ics`]({raw_base}/orario_lezioni.ics)")
+    lines.append(f"- 📊 **Tabella CSV (Excel / Sheets)**: [📥 Scarica `orario_lezioni.csv`]({raw_base}/orario_lezioni.csv) • [Visualizza su GitHub]({blob_base}/orario_lezioni.csv)")
+    lines.append(f"- 🌐 **Pagina Web Interattiva**: [Visualizza `orario_lezioni.html`]({blob_base}/orario_lezioni.html)")
+    lines.append(f"- 📄 **Elenco Testuale di Oggi**: [Visualizza `orario_oggi.md`]({blob_base}/orario_oggi.md)")
+    lines.append(f"\n*Notifica generata automaticamente per @{owner} dal Tracciatore Orari Lezioni UniBo.*")
     
     return title, "\n".join(lines)
 
 def invia_issue_github(titolo, corpo, labels=None):
-    """Crea o aggiorna la Issue nel repository GitHub usando GITHUB_TOKEN e GITHUB_REPOSITORY."""
+    """Crea una nuova Issue nel repository GitHub assegnata all'utente per garantire l'invio immediato della notifica email."""
     token = os.environ.get("GITHUB_TOKEN")
     repo = os.environ.get("GITHUB_REPOSITORY")
     if not token or not repo:
@@ -642,59 +648,41 @@ def invia_issue_github(titolo, corpo, labels=None):
         "Content-Type": "application/json"
     }
 
-    oggi_str = datetime.now(ROME_TZ).strftime("%d/%m/%Y")
-    existing_issue_number = None
+    owner = os.environ.get("GITHUB_REPOSITORY_OWNER") or (repo.split("/")[0] if "/" in repo else "Martiri")
 
-    # 1. Controlla le issue aperte: chiudi quelle dei giorni precedenti e trova se ne esiste già una per oggi
+    # 1. Chiudi tutte le issue precedenti aperte con questa etichetta per mantenere pulito il repository
     try:
-        list_url = f"https://api.github.com/repos/{repo}/issues?labels=orario-lezioni&state=open&per_page=10"
+        label_query = labels[0] if labels else "orario-lezioni"
+        list_url = f"https://api.github.com/repos/{repo}/issues?labels={label_query}&state=open&per_page=30"
         req = urllib.request.Request(list_url, headers=headers, method="GET")
         with urllib.request.urlopen(req, timeout=15) as resp:
             if resp.status == 200:
                 issues = json.loads(resp.read().decode("utf-8"))
                 for iss in issues:
-                    if oggi_str in iss["title"]:
-                        existing_issue_number = iss["number"]
-                    else:
-                        # Chiudi la issue del giorno precedente per mantenere pulito il repository
-                        close_url = f"https://api.github.com/repos/{repo}/issues/{iss['number']}"
-                        close_req = urllib.request.Request(
-                            close_url,
-                            data=json.dumps({"state": "closed"}).encode("utf-8"),
-                            headers=headers,
-                            method="PATCH"
-                        )
-                        try:
-                            with urllib.request.urlopen(close_req, timeout=10) as cresp:
-                                if cresp.status == 200:
-                                    print(f"[INFO] Chiusa precedente issue archiviata #{iss['number']}")
-                        except Exception:
-                            pass
+                    close_url = f"https://api.github.com/repos/{repo}/issues/{iss['number']}"
+                    close_req = urllib.request.Request(
+                        close_url,
+                        data=json.dumps({"state": "closed"}).encode("utf-8"),
+                        headers=headers,
+                        method="PATCH"
+                    )
+                    try:
+                        with urllib.request.urlopen(close_req, timeout=10) as cresp:
+                            if cresp.status == 200:
+                                print(f"[INFO] Chiusa precedente issue archiviata #{iss['number']}")
+                    except Exception:
+                        pass
     except Exception as e:
-        print(f"[WARN] Impossibile verificare issue esistenti: {e}")
+        print(f"[WARN] Impossibile verificare/chiudere issue precedenti: {e}")
 
-    # 2. Se esiste già una issue per oggi, aggiornala
-    if existing_issue_number:
-        patch_url = f"https://api.github.com/repos/{repo}/issues/{existing_issue_number}"
-        payload = {
-            "title": titolo,
-            "body": corpo
-        }
-        try:
-            req = urllib.request.Request(patch_url, data=json.dumps(payload).encode("utf-8"), headers=headers, method="PATCH")
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                if resp.status == 200:
-                    print(f"[SUCCESS] Issue #{existing_issue_number} aggiornata con successo per oggi ({oggi_str}).")
-                    return True
-        except Exception as e:
-            print(f"[WARN] Errore aggiornamento Issue #{existing_issue_number}: {e}")
-
-    # 3. Altrimenti crea una nuova Issue
+    # 2. Crea SEMPRE una NUOVA Issue assegnata all'owner
+    # In GitHub, l'apertura di una nuova issue con assegnatario genera l'invio dell'email di notifica con il corpo completo della issue
     create_url = f"https://api.github.com/repos/{repo}/issues"
     payload = {
         "title": titolo,
         "body": corpo,
-        "labels": labels
+        "labels": labels,
+        "assignees": [owner] if owner else []
     }
     data_bytes = json.dumps(payload).encode("utf-8")
     
@@ -707,18 +695,22 @@ def invia_issue_github(titolo, corpo, labels=None):
                 return True
     except urllib.error.HTTPError as e:
         if e.code == 422:
-            # Se fallisce per etichetta non esistente, ritenta senza labels
-            payload.pop("labels", None)
-            data_bytes = json.dumps(payload).encode("utf-8")
+            # Fallback se assignees o labels non sono accettati
+            print("[WARN] Fallback creazione issue senza assignees/labels...")
+            payload_fallback = {
+                "title": titolo,
+                "body": corpo
+            }
             try:
-                req = urllib.request.Request(create_url, data=data_bytes, headers=headers, method="POST")
+                fb_bytes = json.dumps(payload_fallback).encode("utf-8")
+                req = urllib.request.Request(create_url, data=fb_bytes, headers=headers, method="POST")
                 with urllib.request.urlopen(req, timeout=15) as resp:
                     if resp.status in (200, 201):
                         res_data = json.loads(resp.read().decode("utf-8"))
-                        print(f"[SUCCESS] Issue GitHub creata con successo (senza label): #{res_data.get('number')} - {titolo}")
+                        print(f"[SUCCESS] Issue GitHub creata con fallback: #{res_data.get('number')} - {titolo}")
                         return True
             except Exception as e2:
-                print(f"[ERRORE] Errore creazione Issue GitHub: {e2}")
+                print(f"[ERRORE] Errore creazione Issue GitHub fallback: {e2}")
         else:
             print(f"[ERRORE] Errore HTTP creazione Issue GitHub ({e.code}): {e.reason}")
     except Exception as e:
