@@ -2,10 +2,8 @@ name: Tracciamento Orario Lezioni Fisica UniBo
 
 on:
   schedule:
-    # Mattina alle 05:25 UTC (07:25 ora italiana estiva CEST / 06:25 ora solare CET).
-    # Il minuto non congestionato (:25 anziché :00) evita le code di GitHub Actions
-    # assicurando la consegna della notifica e dell'email sempre prima delle 08:00.
-    - cron: '25 5 * * *'
+    # Ogni mattina alle 04:00 ora italiana (02:00 UTC con ora legale CEST / 03:00 UTC con ora solare CET)
+    - cron: '0 2 * * *'
 
   workflow_dispatch: # Permette di avviarlo manualmente dalla scheda Actions con 1 click
 
