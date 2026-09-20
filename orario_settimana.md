@@ -1,4 +1,4 @@
-# Orario della Settimana (2026-09-19 - 2026-09-26)
+# Orario della Settimana (2026-09-20 - 2026-09-27)
 
 | Data | Giorno | Orario | Insegnamento | Canale | Aula | Indirizzo | Docente | Note |
 | :--- | :--- | :--- | :--- | :---: | :--- | :--- | :--- | :--- |

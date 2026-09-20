@@ -1,3 +1,3 @@
-# Lezioni di Oggi - Sabato 2026-09-19
+# Lezioni di Oggi - Domenica 2026-09-20
 
 _Nessuna lezione programmata per questo periodo._
