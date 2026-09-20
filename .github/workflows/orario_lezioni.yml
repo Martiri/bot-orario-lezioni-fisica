@@ -2,8 +2,8 @@ name: Tracciamento Orario Lezioni Fisica UniBo
 
 on:
   schedule:
-    # Ogni mattina alle 04:00 ora italiana (02:00 UTC con ora legale CEST / 03:00 UTC con ora solare CET)
-    - cron: '0 2 * * *'
+    # Ogni notte alle 02:30 ora italiana (00:30 UTC con ora legale CEST / 01:30 UTC con ora solare CET)
+    - cron: '30 0 * * *'
 
   workflow_dispatch: # Permette di avviarlo manualmente dalla scheda Actions con 1 click
 
