@@ -1,41 +1,7 @@
 {
   "canale": "M-Z",
-  "last_updated": "2026-09-23T06:55:28.565491+02:00",
+  "last_updated": "2026-09-24T07:05:22.411025+02:00",
   "lessons": [
-    {
-      "id": "2026-09-16_MECCANICA QUANTISTICA_M-Z_09:00 - 13:00",
-      "data": "2026-09-16",
-      "giorno": "Mercoledì",
-      "ora_inizio": "09:00",
-      "ora_fine": "13:00",
-      "orario": "09:00 - 13:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (M-Z) / (1) Modulo 1",
-      "canale": "M-Z",
-      "docente": "Francesco Ravanini",
-      "aula": "AULA MAGNA BIOCHIMICA (Accesso dal I piano)",
-      "indirizzo": "Via Irnerio, 48 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-16T09:00:00",
-      "end_iso": "2026-09-16T13:00:00"
-    },
-    {
-      "id": "2026-09-16_ASTROFISICA_TUTTI_14:00 - 16:00",
-      "data": "2026-09-16",
-      "giorno": "Mercoledì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "ASTROFISICA",
-      "corso_completo": "ASTROFISICA",
-      "canale": "TUTTI",
-      "docente": "Barbara Lanzoni",
-      "aula": "AULA A EST",
-      "indirizzo": "VIA Irnerio 42 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-16T14:00:00",
-      "end_iso": "2026-09-16T16:00:00"
-    },
     {
       "id": "2026-09-17_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-09-17",
