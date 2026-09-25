@@ -1,41 +1,7 @@
 {
   "canale": "M-Z",
-  "last_updated": "2026-09-24T07:05:22.411025+02:00",
+  "last_updated": "2026-09-25T07:07:52.977121+02:00",
   "lessons": [
-    {
-      "id": "2026-09-17_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
-      "data": "2026-09-17",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (M-Z) / (1) Modulo 1",
-      "canale": "M-Z",
-      "docente": "Francesco Ravanini",
-      "aula": "AULA MAGNA",
-      "indirizzo": "Viale Carlo Berti Pichat, 5 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-17T09:00:00",
-      "end_iso": "2026-09-17T11:00:00"
-    },
-    {
-      "id": "2026-09-17_FISICA NUCLEARE E SUBNUCLEARE_M-Z_11:00 - 13:00",
-      "data": "2026-09-17",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (M-Z)",
-      "canale": "M-Z",
-      "docente": "Iacopo Vivarelli",
-      "aula": "AULA MAGNA",
-      "indirizzo": "Viale Carlo Berti Pichat, 5 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-17T11:00:00",
-      "end_iso": "2026-09-17T13:00:00"
-    },
     {
       "id": "2026-09-18_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-09-18",
