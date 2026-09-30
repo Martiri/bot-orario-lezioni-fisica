@@ -1,41 +1,7 @@
 {
   "canale": "M-Z",
-  "last_updated": "2026-09-29T07:54:27.994362+02:00",
+  "last_updated": "2026-09-30T07:45:04.787139+02:00",
   "lessons": [
-    {
-      "id": "2026-09-22_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
-      "data": "2026-09-22",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (M-Z)",
-      "canale": "M-Z",
-      "docente": "Iacopo Vivarelli",
-      "aula": "AULA VII PIANO",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-22T09:00:00",
-      "end_iso": "2026-09-22T11:00:00"
-    },
-    {
-      "id": "2026-09-22_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-09-22",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-22T14:00:00",
-      "end_iso": "2026-09-22T16:00:00"
-    },
     {
       "id": "2026-09-23_MECCANICA QUANTISTICA_M-Z_09:00 - 13:00",
       "data": "2026-09-23",
