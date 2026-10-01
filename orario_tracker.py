@@ -3,6 +3,7 @@ import os
 import re
 import csv
 import sys
+import time
 import unicodedata
 import urllib.request
 import urllib.parse
@@ -55,7 +56,7 @@ def normalize_text(text: str) -> str:
 
 def extract_channel(title: str, cod_sdoppiamento: str = "") -> str:
     """Estrae l'eventuale canale (A-L o M-Z) dal titolo dell'insegnamento o dal codice sdoppiamento."""
-    combined = f"{title} {cod_sdoppiamento}".upper()
+    combined = f"{title or ''} {cod_sdoppiamento or ''}".upper()
     if "(A-L)" in combined or "A-L" in combined:
         return "A-L"
     elif "(M-Z)" in combined or "M-Z" in combined:
@@ -64,7 +65,7 @@ def extract_channel(title: str, cod_sdoppiamento: str = "") -> str:
 
 def clean_course_name(title: str) -> str:
     """Pulisce il nome del corso togliendo tag di moduli e canali per una lettura agevole."""
-    t = title
+    t = title or ""
     t = re.sub(r"/\s*\([0-9]+\)\s*Modulo\s*[0-9]+", "", t, flags=re.IGNORECASE)
     t = re.sub(r"/\s*\([A-Z]-[A-Z]\)", "", t, flags=re.IGNORECASE)
     t = re.sub(r"\s+", " ", t).strip()
@@ -87,7 +88,7 @@ def filter_by_channel(event_channel: str, user_channel: str) -> bool:
 def fetch_schedule(api_url: str, anno: int, curricula: str, start_date: str, end_date: str) -> list:
     """
     Interroga l'API UniBo a blocchi di 30 giorni.
-    Questo evita errori 500 generati dal server Plone quando si richiedono periodi troppo lunghi.
+    Include logica di retry automatico con backoff per gestire temporanei disservizi o rate-limit del server Plone.
     """
     start_dt = datetime.strptime(start_date, "%Y-%m-%d").date()
     end_dt = datetime.strptime(end_date, "%Y-%m-%d").date()
@@ -107,15 +108,24 @@ def fetch_schedule(api_url: str, anno: int, curricula: str, start_date: str, end
         url = f"{api_url}?{query_str}"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (UniBoPhysicsScheduleTracker)"})
         
-        try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                if resp.status == 200:
-                    data = json.loads(resp.read().decode("utf-8"))
-                    all_events.extend(data)
-        except Exception as e:
-            print(f"[WARN] Errore nel download blocco {chunk_start} -> {chunk_end}: {e}")
+        chunk_success = False
+        for attempt in range(1, 4):
+            try:
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    if resp.status == 200:
+                        data = json.loads(resp.read().decode("utf-8"))
+                        all_events.extend(data)
+                        chunk_success = True
+                        break
+            except Exception as e:
+                print(f"[WARN] Tentativo {attempt}/3 fallito per blocco {chunk_start} -> {chunk_end}: {e}")
+                time.sleep(1.5)
+                
+        if not chunk_success:
+            print(f"[ERRORE] Impossibile scaricare blocco {chunk_start} -> {chunk_end} dopo 3 tentativi.")
             
         chunk_start = chunk_end + timedelta(days=1)
+        time.sleep(0.2)
         
     return all_events
 
@@ -125,11 +135,11 @@ def parse_events(raw_events: list, target_courses: list, user_channel: str) -> l
     seen = set()
     
     for ev in raw_events:
-        title = ev.get("title", "")
+        title = (ev.get("title") or "").strip()
         if not matches_target_courses(title, target_courses):
             continue
             
-        channel = extract_channel(title, ev.get("cod_sdoppiamento", ""))
+        channel = extract_channel(title, ev.get("cod_sdoppiamento") or "")
         if not filter_by_channel(channel, user_channel):
             continue
             
@@ -183,7 +193,7 @@ def parse_events(raw_events: list, target_courses: list, user_channel: str) -> l
     parsed.sort(key=lambda x: (x["data"], x["ora_inizio"], x["corso"]))
     return parsed
 
-def detect_schedule_changes(prev_lessons: list, curr_lessons: list, today_str: str) -> list:
+def detect_schedule_changes(prev_lessons: list, curr_lessons: list, today_str: str, target_courses: list = None) -> list:
     """
     Rileva variazioni tra la precedente esecuzione e quella odierna:
     - Cambi di aula
@@ -196,11 +206,17 @@ def detect_schedule_changes(prev_lessons: list, curr_lessons: list, today_str: s
         
     changes = []
     
+    # Se specificato target_courses, filtriamo le lezioni precedenti per evitare
+    # falsi allarmi di cancellazione nel caso in cui un corso sia stato rimosso dai seguiti
+    filtered_prev = prev_lessons
+    if target_courses:
+        filtered_prev = [x for x in prev_lessons if matches_target_courses(x.get("corso", ""), target_courses)]
+    
     # Mappiamo le lezioni future (da oggi compreso in poi)
     # Chiave univoca della lezione su base giornaliera
     prev_map = {
         f"{x['data']}_{normalize_text(x['corso'])}_{x['canale']}": x 
-        for x in prev_lessons if x['data'] >= today_str
+        for x in filtered_prev if x['data'] >= today_str
     }
     curr_map = {
         f"{x['data']}_{normalize_text(x['corso'])}_{x['canale']}": x 
@@ -263,8 +279,13 @@ def detect_schedule_changes(prev_lessons: list, curr_lessons: list, today_str: s
             })
             
     # 2. Controllo nuove lezioni comparse
+    # Verifichiamo se il corso era già presente nello storico per evitare
+    # decine di falsi allarmi di nuova lezione quando si aggiunge un intero insegnamento alla config
+    prev_courses = {normalize_text(x["corso"]) for x in filtered_prev}
     for key, curr_item in curr_map.items():
         if key not in prev_map:
+            if normalize_text(curr_item["corso"]) not in prev_courses:
+                continue
             changes.append({
                 "tipo": "NUOVA_LEZIONE",
                 "data": curr_item["data"],
@@ -485,7 +506,7 @@ def send_ntfy_notification(topic: str, message_text: str, title: str):
         print(f"[WARN] Errore invio ntfy.sh: {e}")
 
 def build_notification_text(today_lessons: list, week_lessons: list, changes: list, is_first_run: bool, now_dt: datetime) -> str:
-    """Formatta il messaggio di notifica delle 8:00 del mattino."""
+    """Formatta il messaggio di notifica notturna delle 01:30."""
     date_str = now_dt.strftime("%d/%m/%Y")
     day_name = GIORNI_SETTIMANA[now_dt.weekday()]
     
@@ -727,30 +748,10 @@ def main():
     print(f"[INFO] Avvio tracciamento orari Fisica (UniBo)")
     print(f"[INFO] Data e ora attuale a Roma: {today_str} {now_rome.strftime('%H:%M:%S')}")
     print(f"[INFO] Canale impostato: {cfg.get('canale', 'ALL')}")
-    
-    # Esecuzione e notifica sempre attive ad ogni ciclo (comportamento identico a bot-bandi-unibo)
-    allow_notification = True
-
-    # Finestra di interrogazione: ultimi 7 giorni fino a +120 giorni (copre l'intero semestre)
-    start_date = (now_rome.date() - timedelta(days=7)).strftime("%Y-%m-%d")
-    end_date = (now_rome.date() + timedelta(days=120)).strftime("%Y-%m-%d")
-    
-    print(f"[INFO] Download orari dall'API ({start_date} -> {end_date})...")
-    raw_events = fetch_schedule(
-        api_url=cfg["api_url"],
-        anno=cfg["anno_di_corso"],
-        curricula=cfg["curricula"],
-        start_date=start_date,
-        end_date=end_date
-    )
-    print(f"[INFO] Ricevuti {len(raw_events)} eventi totali dall'ateneo.")
-    
-    current_schedule = parse_events(raw_events, cfg["target_courses"], cfg.get("canale", "ALL"))
-    print(f"[INFO] {len(current_schedule)} lezioni corrispondono ai corsi seguiti.")
-    
     # Caricamento storico precedente
     previous_schedule = []
     is_first_run = True
+    last_updated_dt = None
     if os.path.exists(PREVIOUS_SCHEDULE_FILE):
         try:
             with open(PREVIOUS_SCHEDULE_FILE, "r", encoding="utf-8") as f:
@@ -759,15 +760,71 @@ def main():
                 if isinstance(state_data, dict) and state_data.get("canale") == cfg.get("canale"):
                     previous_schedule = state_data.get("lessons", [])
                     is_first_run = False
+                    if state_data.get("last_updated"):
+                        try:
+                            last_updated_dt = datetime.fromisoformat(state_data["last_updated"])
+                        except Exception:
+                            pass
                 elif isinstance(state_data, list):
                     previous_schedule = state_data
                     is_first_run = False
         except Exception as e:
             print(f"[WARN] Impossibile leggere {PREVIOUS_SCHEDULE_FILE}: {e}")
             is_first_run = True
+
+    # Controllo orario per esecuzione notturna pianificata alle 01:30 italiane (Europe/Rome):
+    # - In estate con ora legale (CEST, UTC+2): 01:30 italiane = 23:30 UTC del giorno precedente
+    # - In inverno con ora solare (CET, UTC+1):  01:30 italiane = 00:30 UTC
+    github_event = os.getenv("GITHUB_EVENT_NAME", "")
+    if github_event == "schedule":
+        is_dst = bool(now_rome.dst())
+        if is_dst and now_rome.hour >= 2:
+            if last_updated_dt and (now_rome - last_updated_dt).total_seconds() < 14400: # 4 ore
+                print(f"[INFO] Esecuzione notturna delle 01:30 già completata alle {last_updated_dt.strftime('%H:%M:%S')}. Salto questo ciclo delle {now_rome.strftime('%H:%M')} per evitare notifiche duplicate.")
+                return
+        elif not is_dst and now_rome.hour == 0:
+            print(f"[INFO] Ora solare attiva. L'orario attuale ({now_rome.strftime('%H:%M')}) è antecedente all'1:30 italiana. Salto questo ciclo in attesa delle 01:30.")
+            return
+
+    # Esecuzione e notifica attive ad ogni ciclo
+    allow_notification = True
+
+    # Finestra di interrogazione: ultimi 7 giorni fino a +120 giorni (copre l'intero semestre)
+    start_date = (now_rome.date() - timedelta(days=7)).strftime("%Y-%m-%d")
+    end_date = (now_rome.date() + timedelta(days=120)).strftime("%Y-%m-%d")
+    
+    print(f"[INFO] Download orari dall'API principale ({start_date} -> {end_date})...")
+    raw_events = fetch_schedule(
+        api_url=cfg["api_url"],
+        anno=cfg["anno_di_corso"],
+        curricula=cfg["curricula"],
+        start_date=start_date,
+        end_date=end_date
+    )
+    print(f"[INFO] Ricevuti {len(raw_events)} eventi totali dal corso principale.")
+
+    for extra in cfg.get("extra_sources", []):
+        extra_url = extra.get("api_url")
+        if extra_url:
+            extra_nome = extra.get("nome", extra_url)
+            print(f"[INFO] Download orari da sorgente extra: {extra_nome}...")
+            extra_events = fetch_schedule(
+                api_url=extra_url,
+                anno=extra.get("anno_di_corso", 1),
+                curricula=extra.get("curricula", "000-000"),
+                start_date=start_date,
+                end_date=end_date
+            )
+            print(f"[INFO] Ricevuti {len(extra_events)} eventi da {extra_nome}.")
+            raw_events.extend(extra_events)
+
+    print(f"[INFO] Totale complessivo eventi acquisiti: {len(raw_events)}.")
+    
+    current_schedule = parse_events(raw_events, cfg["target_courses"], cfg.get("canale", "ALL"))
+    print(f"[INFO] {len(current_schedule)} lezioni corrispondono ai corsi seguiti.")
             
     # Rilevamento variazioni
-    changes = detect_schedule_changes(previous_schedule, current_schedule, today_str)
+    changes = detect_schedule_changes(previous_schedule, current_schedule, today_str, target_courses=cfg.get("target_courses"))
     if changes:
         print(f"[AVVISO] Trovate {len(changes)} variazioni di orario o aula!")
         for ch in changes:
@@ -841,7 +898,7 @@ def main():
     else:
         print("[INFO] Notifica non inviata in questo orario.")
 
-    print("\n--- ANTEPRIMA NOTIFICA DELLE 8:00 ---\n")
+    print("\n--- ANTEPRIMA NOTIFICA DELLE 01:30 ---\n")
     print(re.sub(r"<[^>]+>", "", notification_html))
     print("---------------------------------------\n")
 

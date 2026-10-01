@@ -6,6 +6,18 @@
   "curricula": "000-000",
   "canale": "M-Z",
   "api_url": "https://corsi.unibo.it/laurea/fisica/orario-lezioni/@@orario_reale_json",
+  "extra_sources": [
+    {
+      "nome": "DATA SCIENCE",
+      "codice_insegnamento": "85302",
+      "docente": "Domenico Di Sante",
+      "ssd": "PHYS-06/A",
+      "descrizione": "Corso facoltativo 3° anno Fisica (cod. 9244), mutuato da Laurea in Scienza dei Materiali (2° anno)",
+      "api_url": "https://corsi.unibo.it/laurea/ScienzaMateriali/orario-lezioni/@@orario_reale_json",
+      "anno_di_corso": 2,
+      "curricula": "000-000"
+    }
+  ],
   "target_courses": [
     "Meccanica quantistica",
     "Fisica nucleare e subnucleare",
@@ -13,7 +25,7 @@
     "Laboratorio di elettronica",
     "Attività formativa e di orientamento",
     "Astrofisica",
-    "Introduzione alla fisica dei sistemi complessi",
+    "Data Science",
     "Elementi di teoria della relatività generale",
     "Topics in mathematical methods and models in theoretical physics"
   ]

@@ -1,6 +1,6 @@
 {
   "canale": "M-Z",
-  "last_updated": "2026-10-01T08:12:01.607257+02:00",
+  "last_updated": "2026-10-01T18:31:05.932846+02:00",
   "lessons": [
     {
       "id": "2026-09-24_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -122,23 +122,6 @@
       "end_iso": "2026-09-28T13:00:00"
     },
     {
-      "id": "2026-09-28_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-09-28",
-      "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-28T14:00:00",
-      "end_iso": "2026-09-28T16:00:00"
-    },
-    {
       "id": "2026-09-29_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-09-29",
       "giorno": "Martedì",
@@ -154,23 +137,6 @@
       "note": "",
       "start_iso": "2026-09-29T09:00:00",
       "end_iso": "2026-09-29T11:00:00"
-    },
-    {
-      "id": "2026-09-29_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-09-29",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-29T14:00:00",
-      "end_iso": "2026-09-29T16:00:00"
     },
     {
       "id": "2026-09-30_MECCANICA QUANTISTICA_M-Z_09:00 - 13:00",
@@ -275,23 +241,6 @@
       "end_iso": "2026-10-02T13:00:00"
     },
     {
-      "id": "2026-10-02_ASTROFISICA_TUTTI_14:00 - 16:00",
-      "data": "2026-10-02",
-      "giorno": "Venerdì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "ASTROFISICA",
-      "corso_completo": "ASTROFISICA",
-      "canale": "TUTTI",
-      "docente": "Barbara Lanzoni",
-      "aula": "AULA A EST",
-      "indirizzo": "VIA Irnerio 42 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-02T14:00:00",
-      "end_iso": "2026-10-02T16:00:00"
-    },
-    {
       "id": "2026-10-05_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-10-05",
       "giorno": "Lunedì",
@@ -326,21 +275,21 @@
       "end_iso": "2026-10-05T13:00:00"
     },
     {
-      "id": "2026-10-05_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-10-05_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-10-05",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA B (BIOCHIMICA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-10-05T14:00:00",
-      "end_iso": "2026-10-05T16:00:00"
+      "start_iso": "2026-10-05T16:00:00",
+      "end_iso": "2026-10-05T18:00:00"
     },
     {
       "id": "2026-10-06_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -375,23 +324,6 @@
       "note": "",
       "start_iso": "2026-10-06T11:00:00",
       "end_iso": "2026-10-06T13:00:00"
-    },
-    {
-      "id": "2026-10-06_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-10-06",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-06T14:00:00",
-      "end_iso": "2026-10-06T16:00:00"
     },
     {
       "id": "2026-10-07_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -443,6 +375,23 @@
       "note": "",
       "start_iso": "2026-10-07T14:00:00",
       "end_iso": "2026-10-07T16:00:00"
+    },
+    {
+      "id": "2026-10-07_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-10-07",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-10-07T15:00:00",
+      "end_iso": "2026-10-07T19:00:00"
     },
     {
       "id": "2026-10-08_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -564,21 +513,21 @@
       "end_iso": "2026-10-12T13:00:00"
     },
     {
-      "id": "2026-10-12_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-10-12_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-10-12",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA A (FARMACOLOGIA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-10-12T14:00:00",
-      "end_iso": "2026-10-12T16:00:00"
+      "start_iso": "2026-10-12T16:00:00",
+      "end_iso": "2026-10-12T18:00:00"
     },
     {
       "id": "2026-10-13_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -613,23 +562,6 @@
       "note": "",
       "start_iso": "2026-10-13T11:00:00",
       "end_iso": "2026-10-13T13:00:00"
-    },
-    {
-      "id": "2026-10-13_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-10-13",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-13T14:00:00",
-      "end_iso": "2026-10-13T16:00:00"
     },
     {
       "id": "2026-10-14_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -681,6 +613,23 @@
       "note": "",
       "start_iso": "2026-10-14T14:00:00",
       "end_iso": "2026-10-14T16:00:00"
+    },
+    {
+      "id": "2026-10-14_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-10-14",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-10-14T15:00:00",
+      "end_iso": "2026-10-14T19:00:00"
     },
     {
       "id": "2026-10-15_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -802,21 +751,21 @@
       "end_iso": "2026-10-19T13:00:00"
     },
     {
-      "id": "2026-10-19_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-10-19_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-10-19",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA A (FARMACOLOGIA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-10-19T14:00:00",
-      "end_iso": "2026-10-19T16:00:00"
+      "start_iso": "2026-10-19T16:00:00",
+      "end_iso": "2026-10-19T18:00:00"
     },
     {
       "id": "2026-10-20_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -851,23 +800,6 @@
       "note": "",
       "start_iso": "2026-10-20T11:00:00",
       "end_iso": "2026-10-20T13:00:00"
-    },
-    {
-      "id": "2026-10-20_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-10-20",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-20T14:00:00",
-      "end_iso": "2026-10-20T16:00:00"
     },
     {
       "id": "2026-10-21_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -919,6 +851,23 @@
       "note": "",
       "start_iso": "2026-10-21T14:00:00",
       "end_iso": "2026-10-21T16:00:00"
+    },
+    {
+      "id": "2026-10-21_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-10-21",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-10-21T15:00:00",
+      "end_iso": "2026-10-21T19:00:00"
     },
     {
       "id": "2026-10-22_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1040,21 +989,21 @@
       "end_iso": "2026-10-26T13:00:00"
     },
     {
-      "id": "2026-10-26_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-10-26_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-10-26",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA A / AULA A (FARMACOLOGIA)",
+      "indirizzo": "Via Filippo Re, 8 - Bologna / Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-10-26T14:00:00",
-      "end_iso": "2026-10-26T16:00:00"
+      "start_iso": "2026-10-26T16:00:00",
+      "end_iso": "2026-10-26T18:00:00"
     },
     {
       "id": "2026-10-27_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -1091,23 +1040,6 @@
       "end_iso": "2026-10-27T13:00:00"
     },
     {
-      "id": "2026-10-27_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-10-27",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-27T14:00:00",
-      "end_iso": "2026-10-27T16:00:00"
-    },
-    {
       "id": "2026-11-02_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-11-02",
       "giorno": "Lunedì",
@@ -1142,21 +1074,21 @@
       "end_iso": "2026-11-02T13:00:00"
     },
     {
-      "id": "2026-11-02_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-11-02_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-11-02",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA A (FARMACOLOGIA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-11-02T14:00:00",
-      "end_iso": "2026-11-02T16:00:00"
+      "start_iso": "2026-11-02T16:00:00",
+      "end_iso": "2026-11-02T18:00:00"
     },
     {
       "id": "2026-11-03_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -1191,23 +1123,6 @@
       "note": "",
       "start_iso": "2026-11-03T11:00:00",
       "end_iso": "2026-11-03T13:00:00"
-    },
-    {
-      "id": "2026-11-03_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-11-03",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-03T14:00:00",
-      "end_iso": "2026-11-03T16:00:00"
     },
     {
       "id": "2026-11-04_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1259,6 +1174,23 @@
       "note": "",
       "start_iso": "2026-11-04T14:00:00",
       "end_iso": "2026-11-04T16:00:00"
+    },
+    {
+      "id": "2026-11-04_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-11-04",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-11-04T15:00:00",
+      "end_iso": "2026-11-04T19:00:00"
     },
     {
       "id": "2026-11-05_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1380,21 +1312,21 @@
       "end_iso": "2026-11-09T13:00:00"
     },
     {
-      "id": "2026-11-09_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-11-09_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-11-09",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA B",
+      "indirizzo": "VIA Irnerio 42 - Bologna",
       "note": "",
-      "start_iso": "2026-11-09T14:00:00",
-      "end_iso": "2026-11-09T16:00:00"
+      "start_iso": "2026-11-09T16:00:00",
+      "end_iso": "2026-11-09T18:00:00"
     },
     {
       "id": "2026-11-10_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -1429,23 +1361,6 @@
       "note": "",
       "start_iso": "2026-11-10T11:00:00",
       "end_iso": "2026-11-10T13:00:00"
-    },
-    {
-      "id": "2026-11-10_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-11-10",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-10T14:00:00",
-      "end_iso": "2026-11-10T16:00:00"
     },
     {
       "id": "2026-11-11_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1497,6 +1412,23 @@
       "note": "",
       "start_iso": "2026-11-11T14:00:00",
       "end_iso": "2026-11-11T16:00:00"
+    },
+    {
+      "id": "2026-11-11_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-11-11",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-11-11T15:00:00",
+      "end_iso": "2026-11-11T19:00:00"
     },
     {
       "id": "2026-11-12_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1635,21 +1567,21 @@
       "end_iso": "2026-11-16T13:00:00"
     },
     {
-      "id": "2026-11-16_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-11-16_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-11-16",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA B (BIOCHIMICA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-11-16T14:00:00",
-      "end_iso": "2026-11-16T16:00:00"
+      "start_iso": "2026-11-16T16:00:00",
+      "end_iso": "2026-11-16T18:00:00"
     },
     {
       "id": "2026-11-17_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -1684,23 +1616,6 @@
       "note": "",
       "start_iso": "2026-11-17T11:00:00",
       "end_iso": "2026-11-17T13:00:00"
-    },
-    {
-      "id": "2026-11-17_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-11-17",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-17T14:00:00",
-      "end_iso": "2026-11-17T16:00:00"
     },
     {
       "id": "2026-11-18_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1752,6 +1667,23 @@
       "note": "",
       "start_iso": "2026-11-18T14:00:00",
       "end_iso": "2026-11-18T16:00:00"
+    },
+    {
+      "id": "2026-11-18_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-11-18",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-11-18T15:00:00",
+      "end_iso": "2026-11-18T19:00:00"
     },
     {
       "id": "2026-11-19_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -1890,21 +1822,21 @@
       "end_iso": "2026-11-23T13:00:00"
     },
     {
-      "id": "2026-11-23_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-11-23_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-11-23",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA B (BIOCHIMICA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-11-23T14:00:00",
-      "end_iso": "2026-11-23T16:00:00"
+      "start_iso": "2026-11-23T16:00:00",
+      "end_iso": "2026-11-23T18:00:00"
     },
     {
       "id": "2026-11-24_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -1939,23 +1871,6 @@
       "note": "",
       "start_iso": "2026-11-24T11:00:00",
       "end_iso": "2026-11-24T13:00:00"
-    },
-    {
-      "id": "2026-11-24_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-11-24",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA C FISIOLOGIA",
-      "indirizzo": "Piazza di Porta San Donato, 2 - Bologna",
-      "note": "",
-      "start_iso": "2026-11-24T14:00:00",
-      "end_iso": "2026-11-24T16:00:00"
     },
     {
       "id": "2026-11-25_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -2007,6 +1922,23 @@
       "note": "",
       "start_iso": "2026-11-25T14:00:00",
       "end_iso": "2026-11-25T16:00:00"
+    },
+    {
+      "id": "2026-11-25_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-11-25",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-11-25T15:00:00",
+      "end_iso": "2026-11-25T19:00:00"
     },
     {
       "id": "2026-11-26_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -2145,21 +2077,21 @@
       "end_iso": "2026-11-30T13:00:00"
     },
     {
-      "id": "2026-11-30_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-11-30_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-11-30",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA A (FARMACOLOGIA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-11-30T14:00:00",
-      "end_iso": "2026-11-30T16:00:00"
+      "start_iso": "2026-11-30T16:00:00",
+      "end_iso": "2026-11-30T18:00:00"
     },
     {
       "id": "2026-12-01_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -2194,23 +2126,6 @@
       "note": "",
       "start_iso": "2026-12-01T11:00:00",
       "end_iso": "2026-12-01T13:00:00"
-    },
-    {
-      "id": "2026-12-01_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-12-01",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-01T14:00:00",
-      "end_iso": "2026-12-01T16:00:00"
     },
     {
       "id": "2026-12-02_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -2262,6 +2177,23 @@
       "note": "",
       "start_iso": "2026-12-02T14:00:00",
       "end_iso": "2026-12-02T16:00:00"
+    },
+    {
+      "id": "2026-12-02_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-12-02",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-12-02T15:00:00",
+      "end_iso": "2026-12-02T19:00:00"
     },
     {
       "id": "2026-12-03_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -2553,21 +2485,21 @@
       "end_iso": "2026-12-14T13:00:00"
     },
     {
-      "id": "2026-12-14_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-12-14_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-12-14",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA B (BIOCHIMICA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-12-14T14:00:00",
-      "end_iso": "2026-12-14T16:00:00"
+      "start_iso": "2026-12-14T16:00:00",
+      "end_iso": "2026-12-14T18:00:00"
     },
     {
       "id": "2026-12-15_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -2602,23 +2534,6 @@
       "note": "",
       "start_iso": "2026-12-15T11:00:00",
       "end_iso": "2026-12-15T13:00:00"
-    },
-    {
-      "id": "2026-12-15_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-12-15",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
-      "note": "",
-      "start_iso": "2026-12-15T14:00:00",
-      "end_iso": "2026-12-15T16:00:00"
     },
     {
       "id": "2026-12-16_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -2670,6 +2585,23 @@
       "note": "",
       "start_iso": "2026-12-16T14:00:00",
       "end_iso": "2026-12-16T16:00:00"
+    },
+    {
+      "id": "2026-12-16_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2026-12-16",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2026-12-16T15:00:00",
+      "end_iso": "2026-12-16T19:00:00"
     },
     {
       "id": "2026-12-17_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
@@ -2808,21 +2740,21 @@
       "end_iso": "2026-12-21T13:00:00"
     },
     {
-      "id": "2026-12-21_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
+      "id": "2026-12-21_DATA SCIENCE_TUTTI_16:00 - 18:00",
       "data": "2026-12-21",
       "giorno": "Lunedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA BOMBELLI",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA A (FARMACOLOGIA)",
+      "indirizzo": "Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-12-21T14:00:00",
-      "end_iso": "2026-12-21T16:00:00"
+      "start_iso": "2026-12-21T16:00:00",
+      "end_iso": "2026-12-21T18:00:00"
     },
     {
       "id": "2026-12-22_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
@@ -2859,21 +2791,38 @@
       "end_iso": "2026-12-22T13:00:00"
     },
     {
-      "id": "2026-12-22_INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI_TUTTI_14:00 - 16:00",
-      "data": "2026-12-22",
-      "giorno": "Martedì",
-      "ora_inizio": "14:00",
-      "ora_fine": "16:00",
-      "orario": "14:00 - 16:00",
-      "corso": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
-      "corso_completo": "INTRODUZIONE ALLA FISICA DEI SISTEMI COMPLESSI",
+      "id": "2027-01-11_DATA SCIENCE_TUTTI_16:00 - 18:00",
+      "data": "2027-01-11",
+      "giorno": "Lunedì",
+      "ora_inizio": "16:00",
+      "ora_fine": "18:00",
+      "orario": "16:00 - 18:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
       "canale": "TUTTI",
-      "docente": "Armando Bazzani",
-      "aula": "AULA B - MEDICINA LEGALE",
-      "indirizzo": "Via Irnerio, 49 - Bologna",
+      "docente": "Domenico Di Sante",
+      "aula": "AULA A / AULA A (FARMACOLOGIA)",
+      "indirizzo": "Via Filippo Re, 8 - Bologna / Via Irnerio, 48 - Bologna",
       "note": "",
-      "start_iso": "2026-12-22T14:00:00",
-      "end_iso": "2026-12-22T16:00:00"
+      "start_iso": "2027-01-11T16:00:00",
+      "end_iso": "2027-01-11T18:00:00"
+    },
+    {
+      "id": "2027-01-13_DATA SCIENCE_TUTTI_15:00 - 19:00",
+      "data": "2027-01-13",
+      "giorno": "Mercoledì",
+      "ora_inizio": "15:00",
+      "ora_fine": "19:00",
+      "orario": "15:00 - 19:00",
+      "corso": "DATA SCIENCE",
+      "corso_completo": "DATA SCIENCE",
+      "canale": "TUTTI",
+      "docente": "Domenico Di Sante",
+      "aula": "LAB INF N BELMELORO / LAB INF O BELMELORO",
+      "indirizzo": "Via Beniamino Andreatta, 8 - Bologna",
+      "note": "",
+      "start_iso": "2027-01-13T15:00:00",
+      "end_iso": "2027-01-13T19:00:00"
     }
   ]
 }

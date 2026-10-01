@@ -1,10 +1,10 @@
 # 🎓 Tracciatore Automatico Orario Lezioni - Laurea in Fisica (UniBo)
 
-Sistema autonomo basato su **GitHub Actions** che interroga quotidianamente l'orario ufficiale del Corso di Laurea in Fisica dell'Università di Bologna (codice corso `9244`), rileva **qualsiasi modifica di aula o orario** rispetto al giorno precedente e invia una notifica alle **8:00 del mattino (orario italiano)** con la tabella aggiornata pronta per essere scaricata.
+Sistema autonomo basato su **GitHub Actions** che interroga quotidianamente l'orario ufficiale del Corso di Laurea in Fisica dell'Università di Bologna (codice corso `9244`), rileva **qualsiasi modifica di aula o orario** rispetto al giorno precedente e invia una notifica alle **01:30 di notte (orario italiano)** con la tabella aggiornata pronta per essere scaricata.
 
 ---
 
-## 📌 Corsi Monitorati (3° Anno)
+## 📌 Corsi Monitorati (3° Anno - Canale M-Z)
 
 Il sistema monitora i seguenti insegnamenti:
 1. **Meccanica Quantistica** (1° semestre)
@@ -13,7 +13,7 @@ Il sistema monitora i seguenti insegnamenti:
 4. **Laboratorio di Elettronica** (1° semestre)
 5. **Attività Formativa e di Orientamento** (tirocinio/preparazione tesi)
 6. **Astrofisica** (1° semestre)
-7. **Introduzione alla Fisica dei Sistemi Complessi** (1° semestre)
+7. **Data Science** (cod. 85302, Prof. Domenico Di Sante, SSD: PHYS-06/A - 1° semestre)
 8. **Elementi di Teoria della Relatività Generale** (2° semestre)
 9. **Topics in Mathematical Methods and Models in Theoretical Physics** (2° semestre)
 
@@ -25,7 +25,7 @@ Il sistema monitora i seguenti insegnamenti:
 ## ⚡ Caratteristiche Principali
 
 - 🤖 **100% Autonomo su GitHub**: Gira ogni giorno su GitHub Actions, senza bisogno di server o computer accesi.
-- ⏰ **Notifica alle 8:00 (Ora Italiana)**: Gestisce automaticamente il cambio tra Ora Solare (CET) e Ora Legale (CEST).
+- ⏰ **Notifica alle 01:30 di notte (Ora Italiana)**: Gestisce automaticamente il cambio tra Ora Solare (CET) e Ora Legale (CEST).
 - 🚨 **Rilevamento Modifiche**: Se un docente sposta un'aula, anticipa un orario o annulla una lezione, il sistema lo segnala in cima alla notifica evidenziando la variazione (`Da Aula X ➡️ A Aula Y`).
 - 📬 **Notifiche via GitHub Issues**: Crea automaticamente un'**Issue** nel repository con la tabella Markdown formattata delle lezioni di oggi, della settimana ed eventuali variazioni (funzionamento analogo a `bot-bandi-fisica`). Zero configurazioni richieste!
 - 📊 **GitHub Actions Step Summary**: Mostra la tabella formattata direttamente nella schermata dell'esecuzione del workflow.

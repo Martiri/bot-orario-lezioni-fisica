@@ -2,7 +2,10 @@ name: Tracciamento Orario Lezioni Fisica UniBo
 
 on:
   schedule:
-    # Ogni notte alle 02:30 ora italiana (00:30 UTC con ora legale CEST / 01:30 UTC con ora solare CET)
+    # Esecuzione notturna alle 01:30 ora italiana (Europe/Rome):
+    # - Con ora legale (CEST, UTC+2): 01:30 Roma = 23:30 UTC del giorno precedente
+    # - Con ora solare (CET, UTC+1):  01:30 Roma = 00:30 UTC
+    - cron: '30 23 * * *'
     - cron: '30 0 * * *'
 
   workflow_dispatch: # Permette di avviarlo manualmente dalla scheda Actions con 1 click
@@ -30,6 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
