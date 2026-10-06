@@ -1,41 +1,7 @@
 {
   "canale": "M-Z",
-  "last_updated": "2026-10-05T04:11:31.115818+02:00",
+  "last_updated": "2026-10-06T05:10:33.033055+02:00",
   "lessons": [
-    {
-      "id": "2026-09-28_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
-      "data": "2026-09-28",
-      "giorno": "Lunedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (M-Z)",
-      "canale": "M-Z",
-      "docente": "Iacopo Vivarelli",
-      "aula": "AULA 1 SCIENZE FARMACEUTICHE (Accesso da Via Belmeloro 6)",
-      "indirizzo": "VIA Belmeloro 4/6 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-28T09:00:00",
-      "end_iso": "2026-09-28T11:00:00"
-    },
-    {
-      "id": "2026-09-28_LABORATORIO DI ELETTRONICA_TUTTI_11:00 - 13:00",
-      "data": "2026-09-28",
-      "giorno": "Lunedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "LABORATORIO DI ELETTRONICA",
-      "corso_completo": "LABORATORIO DI ELETTRONICA / (1) Modulo 1",
-      "canale": "TUTTI",
-      "docente": "Gilda Scioli",
-      "aula": "AULA MAGNA",
-      "indirizzo": "Viale Carlo Berti Pichat, 5 - Bologna",
-      "note": "",
-      "start_iso": "2026-09-28T11:00:00",
-      "end_iso": "2026-09-28T13:00:00"
-    },
     {
       "id": "2026-09-29_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
       "data": "2026-09-29",
