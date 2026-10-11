@@ -1,3 +1,3 @@
-# Lezioni di Oggi - Sabato 2026-10-10
+# Lezioni di Oggi - Domenica 2026-10-11
 
 _Nessuna lezione programmata per questo periodo._
