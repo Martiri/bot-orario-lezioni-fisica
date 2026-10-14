@@ -1,41 +1,7 @@
 {
   "canale": "M-Z",
-  "last_updated": "2026-10-13T05:41:48.026653+02:00",
+  "last_updated": "2026-10-14T04:01:48.066943+02:00",
   "lessons": [
-    {
-      "id": "2026-10-06_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
-      "data": "2026-10-06",
-      "giorno": "Martedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (M-Z)",
-      "canale": "M-Z",
-      "docente": "Iacopo Vivarelli",
-      "aula": "AULA VII PIANO",
-      "indirizzo": "Piazza di Porta San Donato, 5 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-06T09:00:00",
-      "end_iso": "2026-10-06T11:00:00"
-    },
-    {
-      "id": "2026-10-06_FISICA DELLA MATERIA_M-Z_11:00 - 13:00",
-      "data": "2026-10-06",
-      "giorno": "Martedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA DELLA MATERIA",
-      "corso_completo": "FISICA DELLA MATERIA / (M-Z) / (2) Modulo 2",
-      "canale": "M-Z",
-      "docente": "Cesare Franchini",
-      "aula": "AULA MAGNA BIOCHIMICA (Accesso dal I piano)",
-      "indirizzo": "Via Irnerio, 48 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-06T11:00:00",
-      "end_iso": "2026-10-06T13:00:00"
-    },
     {
       "id": "2026-10-07_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-10-07",
