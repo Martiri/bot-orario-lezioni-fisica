@@ -1,41 +1,7 @@
 {
   "canale": "M-Z",
-  "last_updated": "2026-10-15T03:37:06.727468+02:00",
+  "last_updated": "2026-10-16T03:32:41.179703+02:00",
   "lessons": [
-    {
-      "id": "2026-10-08_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
-      "data": "2026-10-08",
-      "giorno": "Giovedì",
-      "ora_inizio": "09:00",
-      "ora_fine": "11:00",
-      "orario": "09:00 - 11:00",
-      "corso": "MECCANICA QUANTISTICA",
-      "corso_completo": "MECCANICA QUANTISTICA / (M-Z) / (1) Modulo 1",
-      "canale": "M-Z",
-      "docente": "Francesco Ravanini",
-      "aula": "AULA MAGNA",
-      "indirizzo": "Viale Carlo Berti Pichat, 5 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-08T09:00:00",
-      "end_iso": "2026-10-08T11:00:00"
-    },
-    {
-      "id": "2026-10-08_FISICA NUCLEARE E SUBNUCLEARE_M-Z_11:00 - 13:00",
-      "data": "2026-10-08",
-      "giorno": "Giovedì",
-      "ora_inizio": "11:00",
-      "ora_fine": "13:00",
-      "orario": "11:00 - 13:00",
-      "corso": "FISICA NUCLEARE E SUBNUCLEARE",
-      "corso_completo": "FISICA NUCLEARE E SUBNUCLEARE / (M-Z)",
-      "canale": "M-Z",
-      "docente": "Iacopo Vivarelli",
-      "aula": "AULA MAGNA",
-      "indirizzo": "Viale Carlo Berti Pichat, 5 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-08T11:00:00",
-      "end_iso": "2026-10-08T13:00:00"
-    },
     {
       "id": "2026-10-09_MECCANICA QUANTISTICA_M-Z_09:00 - 11:00",
       "data": "2026-10-09",
@@ -358,23 +324,6 @@
       "note": "",
       "start_iso": "2026-10-19T11:00:00",
       "end_iso": "2026-10-19T13:00:00"
-    },
-    {
-      "id": "2026-10-19_DATA SCIENCE_TUTTI_16:00 - 18:00",
-      "data": "2026-10-19",
-      "giorno": "Lunedì",
-      "ora_inizio": "16:00",
-      "ora_fine": "18:00",
-      "orario": "16:00 - 18:00",
-      "corso": "DATA SCIENCE",
-      "corso_completo": "DATA SCIENCE",
-      "canale": "TUTTI",
-      "docente": "Domenico Di Sante",
-      "aula": "AULA A (FARMACOLOGIA)",
-      "indirizzo": "Via Irnerio, 48 - Bologna",
-      "note": "",
-      "start_iso": "2026-10-19T16:00:00",
-      "end_iso": "2026-10-19T18:00:00"
     },
     {
       "id": "2026-10-20_FISICA NUCLEARE E SUBNUCLEARE_M-Z_09:00 - 11:00",
